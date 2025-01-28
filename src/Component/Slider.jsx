@@ -8,7 +8,7 @@ function Slider() {
         <h1 className="p text-[18px] tracking-widest text-white font-bold ">
           Welcome to Namrata Foods
         </h1>
-        <h1 className="p text-3xl text-white font-bold ">
+        <h1 className="p text-3xl text-white font-bold max-md:text-xl">
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially

@@ -15,7 +15,7 @@ function WhyChoose() {
         </h1>
         <h1
           style={{ padding: "20px 0" }}
-          className="text-5xl text-center font-bold text-[#222222"
+          className="text-5xl text-center font-bold text-[#222222 max-md:text-3xl"
         >
           {" "}
           Leave Your Guests Speechless With Our Fabulous Food!

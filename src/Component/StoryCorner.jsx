@@ -82,7 +82,7 @@ function StoryCorner() {
         </div>
         <div className="w-1/2 max-md:w-full overflow-hidden rounded-3xl">
           <img
-            className="hover:scale-125 duration-300"
+            className="hover:scale-125 duration-300 transition-transform "
             src="https://img.freepik.com/free-photo/view-white-guest-chairs-decorated-ceremonial-archway-open-air-sunny-day_8353-11514.jpg?t=st=1738062632~exp=1738066232~hmac=db7de8a6bdb2a9c6bda14d2846051ad136686580658b7b572fd1ee6b1da271bf&w=900"
           />
         </div>
