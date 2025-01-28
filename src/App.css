@@ -42,3 +42,9 @@ a {
   padding: 1%;
   background-color: #2222222b;
 }
+
+.hov:hover {
+  color: #fff;
+  transition: 0.3s;
+
+}

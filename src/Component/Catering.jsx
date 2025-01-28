@@ -10,7 +10,7 @@ function Catering() {
     <div className="" style={{ marginTop: "70px" }}>
       <div className="w-2/3 max-md:w-full" style={{ margin: "auto" }}>
         <h1 className="text-xl text-center  font-bold text-rose-800 tracking-widest uppercase">
-          What We Do
+          What We Do.
         </h1>
         <h1
           style={{ padding: "20px 0" }}

@@ -8,6 +8,8 @@ import AnimatedCursor from "react-animated-cursor";
 import WhyChoose from "./Component/WhyChoose";
 import Loading from "./Component/Loading";
 import StoryCorner from "./Component/StoryCorner";
+import Testimonials from "./Component/Testimonials";
+import Footer from "./Component/footer/Footer";
 
 function App() {
   const [loading, setLoading] = React.useState(true);
@@ -48,6 +50,8 @@ function App() {
       <Catering />
       <WhyChoose />
       <StoryCorner />
+      <Testimonials />
+      <Footer />
     </>
   );
 }

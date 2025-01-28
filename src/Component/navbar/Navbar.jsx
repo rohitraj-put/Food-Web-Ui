@@ -63,7 +63,10 @@ function Navbar() {
             >
               Menu
             </Link>
-            <ul className="dropList absolute hidden group-hover:block bg-rose-800 top-6 shadow-lg  rounded-lg  w-48">
+            <ul
+              className="dropList absolute hidden group-hover:block bg-white top-6 shadow-lg w-72"
+              style={{ paddingTop: " 28px" }}
+            >
               {[
                 "Wedding menu",
                 "60th wedding menu",
@@ -76,13 +79,17 @@ function Navbar() {
                 "House warming breakfast menu",
                 "House warming lunch menu",
                 "Mehndi Function menu",
-                "Corporate menu",
-                "Retirement Function menu",
-                "Live counter",
-                "Counters & stalls for wedding function",
               ].map((item, index) => (
-                <li key={index}>
-                  <Link className="dropList block px-4" to="#">
+                <li
+                  key={index}
+                  className="hover:bg-rose-800 
+              "
+                >
+                  <Link
+                    className="dropList block px-4 hov  "
+                    to="#"
+                    style={{ padding: "4px 20px" }}
+                  >
                     {item}
                   </Link>
                 </li>
