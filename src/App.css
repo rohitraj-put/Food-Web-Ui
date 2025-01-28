@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+nav {
+  padding: 0 2%;
+}
+
+.btn {
+  padding: 0.8% 2%;
+}
+
+a {
+
+  color: #222222;
+}
+
+.dropList {
+  padding: 1%;
+}
+
+.bgImage {
+  background: url('https://img.freepik.com/free-photo/good-looking-tables-with-perfect-dishes-restaurant_8353-9920.jpg?t=st=1738037029~exp=1738040629~hmac=d6d1be62c4703fabd0775a2886cc686ff9b1742fb668df1371d7e7b0146e181c&w=900');
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.p {
+  padding: 1% 0%;
+}
+
+.back {
+  padding: 1%;
+  background-color: #2222222b;
+}
