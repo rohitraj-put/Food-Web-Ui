@@ -41,23 +41,32 @@ function Navbar() {
       >
         <ul className="lg:flex lg:space-x-4 mt-4 lg:mt-0 space-y-2 lg:space-y-0 gap-8">
           <li>
-            <Link className="block text-gray-700" to="/">
+            <Link
+              className="block text-gray-700 hover:scale-125 duration-700"
+              to="/"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link className="block text-gray-700" to="/about">
+            <Link
+              className="block text-gray-700 hover:scale-125 duration-700"
+              to="/about"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link className="block text-gray-700" to="/services">
+            <Link
+              className="block text-gray-700 hover:scale-125 duration-700"
+              to="/services"
+            >
               Services
             </Link>
           </li>
           <li className="relative group">
             <Link
-              className="block text-gray-700"
+              className="block text-gray-700 hover:scale-125 duration-700"
               to="#"
               onClick={(e) => e.preventDefault()}
             >
@@ -86,7 +95,7 @@ function Navbar() {
               "
                 >
                   <Link
-                    className="dropList block px-4 hov  "
+                    className="dropList block px-4 hov hover:scale-105 duration-700 "
                     to="#"
                     style={{ padding: "4px 20px" }}
                   >
@@ -97,17 +106,26 @@ function Navbar() {
             </ul>
           </li>
           <li>
-            <Link className="block text-gray-700 " to="/gallery">
+            <Link
+              className="block text-gray-700 hover:scale-125 duration-700 "
+              to="/gallery"
+            >
               Gallery
             </Link>
           </li>
           <li>
-            <Link className="block text-gray-700" to="/blogs">
+            <Link
+              className="block text-gray-700 hover:scale-125 duration-700"
+              to="/blogs"
+            >
               Blogs
             </Link>
           </li>
           <li>
-            <Link className="block text-gray-700" to="/contact">
+            <Link
+              className="block text-gray-700 hover:scale-125 duration-700"
+              to="/contact"
+            >
               Contact
             </Link>
           </li>

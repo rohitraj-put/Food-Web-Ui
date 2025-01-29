@@ -52,7 +52,7 @@ function About() {
 
         <div
           style={{ paddingTop: "10px" }}
-          className="flex justify-between flex-row gap-2"
+          className="flex justify-center flex-row gap-2"
         >
           <div
             className="w-48 max-md:h-52 h-44 shadow-xl  rounded-md bg-white"
