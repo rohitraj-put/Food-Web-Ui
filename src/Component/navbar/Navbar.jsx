@@ -14,11 +14,14 @@ function Navbar() {
   return (
     <nav className="flex justify-between  items-center h-[80px] bg-white shadow-md sticky top-0 z-100 p-14 ">
       <Link to="/">
-        <img
+        {/* <img
           src="https://venuscateringservice.com/myimages/logo/logo.jpeg"
           alt="Logo"
           className="h-16 w-24"
-        />
+        /> */}
+        <h2 className="text-3xl text-rose-800 uppercase font-bold">
+          Namrata foods
+        </h2>
       </Link>
 
       <div
@@ -125,7 +128,7 @@ function Navbar() {
           className=" font-sans flex justify-center gap-2 items-center mx-auto
           shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md
           lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2
-          rounded-full"
+          rounded-full max-md:hidden"
           type="submit"
         >
           {" "}

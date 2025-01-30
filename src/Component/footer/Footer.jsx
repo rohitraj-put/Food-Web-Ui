@@ -11,11 +11,14 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between gap-4">
           {/* Logo and Description */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <img
+            {/* <img
               className="h-20 w-32"
               src="https://venuscateringservice.com/myimages/logo/logo.jpeg"
               alt="logo"
-            />
+            /> */}
+            <h2 className="text-3xl text-white uppercase font-bold">
+              Namrata foods
+            </h2>
             <p className="mt-4" style={{ marginTop: "20px" }}>
               Let Namrata Foods Catering transform your special occasion into a
               masterpiece with our professional touch.

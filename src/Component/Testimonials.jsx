@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoArrowForwardSharp, IoArrowBackOutline } from "react-icons/io5";
+import TestimonialsImage from "../assets/Image/testimonial-img.png";
 
 const reviews = [
   {
@@ -89,7 +90,7 @@ function Testimonials() {
       <div className="w-[400px] h-[630px] max-md:w-full">
         <img
           className="w-full h-full"
-          src="https://Namrata foodscateringservice.com/images/testimonial-img.png"
+          src={TestimonialsImage}
           alt="Testimonial"
         />
       </div>

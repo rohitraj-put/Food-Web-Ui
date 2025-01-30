@@ -6,7 +6,7 @@ function Exprience() {
       className="flex justify-center gap-8 flex-row max-md:flex-col"
       style={{ padding: "10px", marginTop: "20px" }}
     >
-      <div className="w-[300px] h-44 rounded-2xl overflow-hidden relative ">
+      <div className="w-[300px] h-44 rounded-2xl overflow-hidden relative  max-md:w-full">
         <img
           className=" w-full h-full hover:scale-110 duration-700"
           src="https://venuscateringservice.com/images/info-bar-4.jpg"
@@ -19,7 +19,7 @@ function Exprience() {
           <p className="text-md">Years Of Excellence</p>
         </div>
       </div>
-      <div className="w-[300px] h-44 rounded-2xl overflow-hidden relative  ">
+      <div className="w-[300px] h-44 rounded-2xl overflow-hidden relative  max-md:w-full">
         <img
           className="w-full h-full hover:scale-110 duration-700"
           src="https://venuscateringservice.com/images/info-bar-1.jpg"
@@ -32,7 +32,7 @@ function Exprience() {
           <p className="text-md">Menu Options</p>
         </div>
       </div>
-      <div className="w-[300px] h-44 rounded-2xl overflow-hidden relative  ">
+      <div className="w-[300px] h-44 rounded-2xl overflow-hidden relative max-md:w-full ">
         <img
           className="w-full h-full hover:scale-110 duration-700"
           src="https://venuscateringservice.com/images/info-bar-2.jpg"
@@ -45,7 +45,7 @@ function Exprience() {
           <p className="text-md">Staff</p>
         </div>
       </div>
-      <div className="w-[300px] h-44 rounded-2xl overflow-hidden relative  ">
+      <div className="w-[300px] h-44 rounded-2xl overflow-hidden relative max-md:w-full ">
         <img
           className="w-full h-full hover:scale-110 duration-700"
           src="https://venuscateringservice.com/images/info-bar-3.jpg"
