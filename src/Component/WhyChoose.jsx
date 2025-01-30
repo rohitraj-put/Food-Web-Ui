@@ -112,7 +112,8 @@ function WhyChoose() {
             Heritage
           </h2>
           <p className="text-[#222222] text-sm font-semibold">
-            Venus caterings blends food and heart, rooted in family traditions.
+            Namrata Foods caterings blends food and heart, rooted in family
+            traditions.
           </p>
         </div>
       </div>

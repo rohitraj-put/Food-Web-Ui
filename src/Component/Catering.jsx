@@ -32,11 +32,11 @@ function Catering() {
       </div>
 
       <div
-        className="flex flex-row max-md:flex-col  justify-center gap-4 overflow-hidden"
+        className="flex flex-row max-md:flex-col  justify-center gap-4 overflow-hidden "
         style={{ padding: "20px" }}
       >
         <div
-          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full"
+          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full rounded-2xl overflow-hidden"
           data-aos="fade-right"
         >
           <div className="w-full h-68 overflow-hidden">
@@ -47,7 +47,7 @@ function Catering() {
             />
           </div>
           <div className="" style={{ padding: "20px" }}>
-            <h1 className="text-xl underline   font-bold text-rose-800 tracking-widest uppercase">
+            <h1 className="text-xl  font-bold text-rose-800 tracking-widest uppercase">
               Wedding Event
             </h1>
             <p
@@ -64,7 +64,7 @@ function Catering() {
           </div>
         </div>
         <div
-          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full"
+          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full rounded-2xl overflow-hidden"
           data-aos="fade-up"
         >
           <div className="w-full h-68 overflow-hidden">
@@ -75,7 +75,7 @@ function Catering() {
             />
           </div>
           <div className="" style={{ padding: "20px" }}>
-            <h1 className="text-xl underline   font-bold text-rose-800 tracking-widest uppercase">
+            <h1 className="text-xl  font-bold text-rose-800 tracking-widest uppercase">
               Corporate Event
             </h1>
             <p
@@ -92,7 +92,7 @@ function Catering() {
           </div>
         </div>
         <div
-          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full "
+          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full rounded-2xl overflow-hidden"
           data-aos="fade-left"
         >
           <div className="w-full h-68 overflow-hidden">
@@ -103,7 +103,7 @@ function Catering() {
             />
           </div>
           <div className="" style={{ padding: "20px" }}>
-            <h1 className="text-xl underline   font-bold text-rose-800 tracking-widest uppercase">
+            <h1 className="text-xl font-bold text-rose-800 tracking-widest uppercase">
               Birthday Party
             </h1>
             <p

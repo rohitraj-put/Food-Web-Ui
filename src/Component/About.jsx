@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 function About() {
   useEffect(() => {
-    Aos.init({ duration: 2000, isOnce: true });
+    Aos.init({ duration: 600, isOnce: true });
   });
   return (
     <div
@@ -14,7 +14,7 @@ function About() {
       <div className="w-1/2 flex justify-between gap-4 max-md:w-full overflow-hidden">
         <div
           className="w-1/2 bg-rose-gray-300 rounded-2xl overflow-hidden"
-          data-aos="flip-left"
+          data-aos="fade-right"
         >
           <img
             className="w-full h-full hover:scale-125 duration-700"
@@ -24,7 +24,7 @@ function About() {
         </div>
         <div
           className="w-1/2 bg-rose-gray-300 rounded-2xl overflow-hidden"
-          data-aos="flip-right"
+          data-aos="fade-right"
         >
           <img
             className="w-full h-full hover:scale-125 duration-700"
@@ -46,8 +46,8 @@ function About() {
         </h1>
 
         <p style={{ padding: "10px 0" }} className=" text-lg text-[#222222">
-          Venus is The Place where Food is Celebrated over 25 Years. We Love to
-          Create Unforgettable Culinary Experiences.
+          Namrata Foods is The Place where Food is Celebrated over 25 Years. We
+          Love to Create Unforgettable Culinary Experiences.
         </p>
 
         <div

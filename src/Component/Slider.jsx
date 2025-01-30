@@ -12,13 +12,13 @@ function Slider() {
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
-              "Hello to Namrata Foods ",
+              "Taste the Purity, Love the Flavor! ",
               1000, // wait 1s before replacing "Mice" with "Hamsters"
-              "Namaste to Namrata Foods ",
+              "Bringing Tradition to Your Table. ",
               1000,
-              "Hey to Namrata Foods ",
+              "Freshness You Can Trust, Taste You’ll Love!",
               1000,
-              "Hii to Namrata Foods ",
+              "Savor the Goodness, Celebrate the Flavor! ",
               1000,
             ]}
             wrapper="span"
@@ -28,9 +28,9 @@ function Slider() {
           />
         </h1>
         <p className="p text-[18px] text-white font-semibold">
-          We are the top vegetarian wedding caterer in Tamil Nadu. We have
-          completed over 2,000+ weddings, supported by a professional team of
-          340 members.
+          We are the top vegetarian wedding caterer in
+          Noida,Ghaziabad,Delhi,Gurugram. We have completed over 2,000+
+          weddings, supported by a professional team of 340 members.
         </p>
         <button
           style={{ margin: "auto" }}

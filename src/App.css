@@ -25,7 +25,7 @@ a {
 }
 
 .bgImage {
-  background: url('https://img.freepik.com/free-photo/good-looking-tables-with-perfect-dishes-restaurant_8353-9920.jpg?t=st=1738037029~exp=1738040629~hmac=d6d1be62c4703fabd0775a2886cc686ff9b1742fb668df1371d7e7b0146e181c&w=900');
+  background: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1738147213~exp=1738150813~hmac=9ef7d67d55a3c66ceb3f223bbec27697dc1618d773e0702253a304593e612a0b&w=900');
 
   background-position: center top;
   background-repeat: no-repeat;
@@ -47,4 +47,23 @@ a {
   color: #fff;
   transition: 0.3s;
 
+}
+
+.review-text {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.slide-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.testimonials-container {
+  overflow: hidden;
 }

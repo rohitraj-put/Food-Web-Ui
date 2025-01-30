@@ -10,6 +10,8 @@ import Loading from "./Component/Loading";
 import StoryCorner from "./Component/StoryCorner";
 import Testimonials from "./Component/Testimonials";
 import Footer from "./Component/footer/Footer";
+import ScrollList from "./Component/ScrollList";
+import Exprience from "./Component/Exprience";
 
 function App() {
   const [loading, setLoading] = React.useState(true);
@@ -51,6 +53,8 @@ function App() {
       <WhyChoose />
       <StoryCorner />
       <Testimonials />
+      <Exprience />
+      <ScrollList />
       <Footer />
     </>
   );
