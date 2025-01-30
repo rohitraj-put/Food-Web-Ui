@@ -55,7 +55,7 @@ function About() {
           className="flex justify-center flex-row gap-2"
         >
           <div
-            className="w-48 max-md:h-52 h-44 shadow-xl  rounded-md bg-white"
+            className="w-48 max-md:min-h-52 min-h-44 shadow-xl  rounded-md bg-white"
             style={{ padding: "10px" }}
             data-aos="flip-down"
           >
@@ -72,7 +72,7 @@ function About() {
             </h2>
           </div>
           <div
-            className="w-48 max-md:h-52 h-44 shadow-xl  rounded-md bg-white"
+            className="w-48 max-md:min-h-52 min-h-44 shadow-xl  rounded-md bg-white"
             style={{ padding: "10px" }}
             data-aos="flip-down"
           >
@@ -89,7 +89,7 @@ function About() {
             </h2>
           </div>
           <div
-            className="w-48 max-md:h-52 h-44 shadow-xl  rounded-md bg-white"
+            className="w-48 max-md:min-h-52 min-h-44 shadow-xl  rounded-md bg-white"
             style={{ padding: "10px" }}
             data-aos="flip-down"
           >
