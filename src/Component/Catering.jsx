@@ -20,7 +20,7 @@ function Catering() {
           Premium catering services
         </h1>
         <p
-          style={{ padding: "10px 0" }}
+          style={{ padding: "10px 6px" }}
           className="text-lg text-center text-[#222222"
         >
           We provide premium catering services for all events, big and small.
