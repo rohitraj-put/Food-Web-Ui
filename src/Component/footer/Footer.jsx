@@ -138,15 +138,14 @@ const Footer = () => {
           style={{ padding: "20px", marginTop: "10px" }}
         >
           <p>
-            &copy; 2024 Namrata Foods All rights reserved | Designed By{" "}
-            <a
+            &copy; 2024 Namrata Foods All rights reserved | Designed By Namrata
+            Universal
+            {/* <a
               style={{ color: "white" }}
               className=" underline"
               href="https://rohitrajputweb.netlify.app/"
               target="_blank"
-            >
-              Rohit Rajput.
-            </a>
+            ></a> */}
           </p>
         </div>
       </div>
