@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
-import logo from "../../assets/Image/logo.png";
+import logo from "../../assets/Image/11zon_cropped.png";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between gap-4">
           {/* Logo and Description */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <img className="h-20 w-36" src={logo} alt="logo" />
+            <img className="h-32 w-32" src={logo} alt="logo" />
             {/* <h2 className="text-3xl text-white uppercase font-bold">
               Namrata foods
             </h2> */}

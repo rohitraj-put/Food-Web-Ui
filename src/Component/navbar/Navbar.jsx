@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Image/logo.png";
+import logo from "../../assets/Image/11zon_cropped.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 
@@ -12,14 +12,18 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between  items-center h-[80px] bg-white shadow-md sticky top-0 z-100 p-14 ">
-      <Link to="/">
-        <img src={logo} alt="Logo" className="h-20 w-36" />
+    <nav className="flex  justify-between  items-center h-[80px] bg-white shadow-md sticky top-0 z-100 p-14 ">
+      <Link to="/" className=" overflow-hidden absolute  top-2 h-28 w-28 z-20">
+        <img
+          src={logo}
+          alt="Logo"
+          className="w-full h-full rounded-full object-cover"
+        />
         {/* <h2 className="text-3xl text-rose-800 uppercase font-bold">
           Namrata foods
         </h2> */}
       </Link>
-
+      <div></div>
       <div
         className={`${
           isOpen ? "block" : "hidden"
