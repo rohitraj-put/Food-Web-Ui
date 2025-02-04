@@ -26,14 +26,27 @@ function ScrollList() {
         style={{ padding: "10px" }}
       >
         {items.map((item, index) => (
-          <li key={index} style={{ marginRight: "15px" }}>
-            {item}
-          </li>
+          <div className="flex items-center ">
+            {" "}
+            <li key={index} style={{ marginRight: "15px" }}>
+              {item}
+            </li>
+            <div
+              className="w-2 h-2 rounded-full bg-white"
+              style={{ marginRight: "4px" }}
+            ></div>
+          </div>
         ))}
         {items.map((item, index) => (
-          <li key={index + items.length} style={{ marginRight: "15px" }}>
-            {item}
-          </li>
+          <div className="flex items-center">
+            <li key={index + items.length} style={{ marginRight: "15px" }}>
+              {item}
+            </li>
+            <div
+              className="w-2 h-2 rounded-full bg-white"
+              style={{ marginRight: "4px" }}
+            ></div>
+          </div>
         ))}
       </ul>
       <style jsx>{`
