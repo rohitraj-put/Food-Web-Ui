@@ -11,17 +11,18 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <nav className="flex  justify-between  items-center h-[80px] bg-white shadow-md sticky top-0 z-100 p-14 ">
-      <Link to="/" className=" overflow-hidden absolute  top-2 h-28 w-28 z-20">
+    <nav className="flex justify-between items-center h-[80px] bg-white shadow-md sticky top-0 z-100 p-14">
+      <Link to="/" className="overflow-hidden absolute top-2 h-28 w-28 z-20">
         <img
           src={logo}
           alt="Logo"
           className="w-full h-full rounded-full object-cover"
         />
-        {/* <h2 className="text-3xl text-rose-800 uppercase font-bold">
-          Namrata foods
-        </h2> */}
       </Link>
       <div></div>
       <div
@@ -32,31 +33,34 @@ function Navbar() {
         <ul className="lg:flex lg:space-x-4 mt-4 lg:mt-0 space-y-2 lg:space-y-0 gap-8">
           <li>
             <Link
-              className="block text-gray-700 hover:scale-125 duration-700 "
+              className="block text-gray-700 hover:scale-125 duration-700"
               to="/"
+              onClick={closeMenu}
             >
               Home
             </Link>
           </li>
           <li>
             <Link
-              className="block text-gray-700 hover:scale-125 duration-700 max-md:"
+              className="block text-gray-700 hover:scale-125 duration-700"
               to="/about"
+              onClick={closeMenu}
             >
               About
             </Link>
           </li>
           <li>
             <Link
-              className="block text-gray-700 hover:scale-125 duration-700 max-md:"
+              className="block text-gray-700 hover:scale-125 duration-700"
               to="/services"
+              onClick={closeMenu}
             >
               Services
             </Link>
           </li>
           <li className="relative group">
             <Link
-              className="block text-gray-700 hover:scale-125 duration-700 max-md:"
+              className="block text-gray-700 hover:scale-125 duration-700"
               to="#"
               onClick={(e) => e.preventDefault()}
             >
@@ -64,7 +68,7 @@ function Navbar() {
             </Link>
             <ul
               className="dropList absolute hidden group-hover:block bg-white top-6 shadow-lg w-72"
-              style={{ paddingTop: " 28px" }}
+              style={{ paddingTop: "28px" }}
             >
               {[
                 "Wedding menu",
@@ -79,15 +83,12 @@ function Navbar() {
                 "House warming lunch menu",
                 "Mehndi Function menu",
               ].map((item, index) => (
-                <li
-                  key={index}
-                  className="hover:bg-rose-800 
-              "
-                >
+                <li key={index} className="hover:bg-rose-800">
                   <Link
-                    className="dropList block px-4 hov hover:scale-105 duration-700 "
-                    to={"#"}
+                    className="dropList block px-4 hover:scale-105 duration-700"
+                    to="#"
                     style={{ padding: "4px 20px" }}
+                    onClick={closeMenu}
                   >
                     {item}
                   </Link>
@@ -97,24 +98,27 @@ function Navbar() {
           </li>
           <li>
             <Link
-              className="block text-gray-700 hover:scale-125 duration-700 max-md: "
+              className="block text-gray-700 hover:scale-125 duration-700"
               to="/gallery"
+              onClick={closeMenu}
             >
               Gallery
             </Link>
           </li>
           <li>
             <Link
-              className="block text-gray-700 hover:scale-125 duration-700 max-md:"
+              className="block text-gray-700 hover:scale-125 duration-700"
               to="/blogs"
+              onClick={closeMenu}
             >
               Blogs
             </Link>
           </li>
           <li>
             <Link
-              className="block text-gray-700 hover:scale-125 duration-700 max-md:"
+              className="block text-gray-700 hover:scale-125 duration-700"
               to="/contactus"
+              onClick={closeMenu}
             >
               Contact
             </Link>
@@ -125,13 +129,9 @@ function Navbar() {
       <div className="flex items-center gap-8">
         <button
           style={{ padding: "8px 16px" }}
-          className=" font-sans flex justify-center gap-2 items-center mx-auto
-          shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md
-          lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2
-          rounded-full max-md:hidden"
+          className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full max-md:hidden"
           type="submit"
         >
-          {" "}
           Book Now
           <svg
             xmlns="http://www.w3.org/2000/svg"
