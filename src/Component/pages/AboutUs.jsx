@@ -21,7 +21,7 @@ function AboutUs() {
 
       {/* ----------------------- */}
       <div className="flex flex-col md:flex-row items-center px-12 py-20 ">
-        <div className="md:w-1/2 md:pr-10">
+        <div className="md:w-1/2 md:pr-10 ">
           <h1 className="text-5xl font-bold mb-4 max-md:text-3xl text-[#222222]">
             A Quality-Driven Catering Company
           </h1>

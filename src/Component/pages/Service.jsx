@@ -108,7 +108,7 @@ function Service() {
         {premiumCateringServices.map((item, index) => (
           <div
             key={index}
-            className="w-[31%] min-h-80 bg-gray-100 max-md:w-full rounded-2xl overflow-hidden flex flex-col"
+            className="w-[31%] min-h-80 bg-gray-100 max-md:w-full max-md:px-4 rounded-2xl overflow-hidden flex flex-col"
           >
             <div className="w-full flex-1 overflow-hidden">
               <img
