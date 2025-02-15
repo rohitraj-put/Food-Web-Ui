@@ -20,8 +20,8 @@ function AboutUs() {
       <About />
 
       {/* ----------------------- */}
-      <div className="flex flex-col md:flex-row items-center px-12 py-20 ">
-        <div className="md:w-1/2 md:pr-10 ">
+      <div className="flex flex-col md:flex-row items-center px-12 py-20 max-md:px-4">
+        <div className="w-1/2 md:pr-10 max-md:w-full ">
           <h1 className="text-5xl font-bold mb-4 max-md:text-3xl text-[#222222]">
             A Quality-Driven Catering Company
           </h1>
@@ -40,7 +40,7 @@ function AboutUs() {
             Book Now
           </button> */}
         </div>
-        <div className="md:w-1/2 mt-5 md:mt-0">
+        <div className="w-1/2 mt-5 md:mt-0 max-md:w-full">
           <img
             src="https://venuscateringservice.com/myimages/aboutcater.png"
             alt="Catering Service"
