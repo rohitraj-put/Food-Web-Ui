@@ -14,6 +14,7 @@ import Contact from "./Component/pages/Contact";
 import AboutUs from "./Component/pages/AboutUs";
 import WeddingMenu from "./Component/Menus/WeddingMenu";
 import PageNotFound from "./Component/PNF/PageNotFound";
+import ScrollTop from "./Component/ScrollTop";
 
 function App() {
   const [loading, setLoading] = React.useState(true);
@@ -27,6 +28,7 @@ function App() {
   }
   return (
     <>
+      <ScrollTop />
       <AnimatedCursor
         innerSize={12}
         outerSize={12}
