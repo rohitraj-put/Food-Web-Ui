@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 
 function Slider() {
+  const navigate = useNavigate();
+
+  function changesRoutes() {
+    navigate("/services");
+  }
   return (
     <div className="bgImage w-full h-[86vh] flex items-center justify-center text-center">
       <div className="w-2/3 back max-md:w-full">
@@ -33,6 +39,7 @@ function Slider() {
           weddings, supported by a professional team of 340 members.
         </p>
         <button
+          onClick={changesRoutes}
           style={{ margin: "auto" }}
           className="btn font-sans flex justify-center gap-2 items-center  shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
           type="submit"

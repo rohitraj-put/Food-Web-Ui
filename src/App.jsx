@@ -1,17 +1,19 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./Component/navbar/Navbar";
-import Slider from "./Component/Slider";
-import About from "./Component/About";
-import Catering from "./Component/Catering";
 import AnimatedCursor from "react-animated-cursor";
-import WhyChoose from "./Component/WhyChoose";
+import Navbar from "./Component/navbar/Navbar";
 import Loading from "./Component/Loading";
-import StoryCorner from "./Component/StoryCorner";
-import Testimonials from "./Component/Testimonials";
 import Footer from "./Component/footer/Footer";
-import ScrollList from "./Component/ScrollList";
-import Exprience from "./Component/Exprience";
+import { Route, Routes } from "react-router-dom";
+import Service from "./Component/pages/Service";
+import Home from "./Component/pages/Home";
+import ScrollList from "../src/Component/ScrollList";
+import Gallery from "./Component/pages/Gallery";
+import Blog from "./Component/pages/Blog";
+import Contact from "./Component/pages/Contact";
+import AboutUs from "./Component/pages/AboutUs";
+import WeddingMenu from "./Component/Menus/WeddingMenu";
+import PageNotFound from "./Component/PNF/PageNotFound";
 
 function App() {
   const [loading, setLoading] = React.useState(true);
@@ -47,13 +49,18 @@ function App() {
         ]}
       />
       <Navbar />
-      <Slider />
-      <About />
-      <Catering />
-      <WhyChoose />
-      <StoryCorner />
-      <Testimonials />
-      <Exprience />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="services" element={<Service />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="blogs" element={<Blog />} />
+        <Route path="contactus" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
+        {/* -------------------Menus Routes--------------- */}
+        {/* <Route path="weddingmenu" element={<WeddingMenu />} /> */}
+      </Routes>
       <ScrollList />
       <Footer />
     </>

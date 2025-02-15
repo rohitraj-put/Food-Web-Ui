@@ -98,24 +98,18 @@ const Footer = () => {
           <div className="w-full md:w-1/3">
             <h2 className="text-xl font-bold mb-4">Contact Now</h2>
             <p style={{ padding: "4px 0" }}>
-              No.1234, Noida Street, Ghaziabad, Delhi, Haryana, India .
+              At. Kh No. 61, In Front Of Basera Near Hotel Jaya Pee Palace,
+              Fatehabad Road,
             </p>
             <p className="mt-4" style={{ padding: "4px 0" }}>
-              Phone:{" "}
+              Phone:
               <a
-                href="tel:+911234567899"
-                className=" "
-                style={{ color: "white" }}
-              >
-                +91 1234567899
-              </a>
-              ,{" "}
-              <a
-                href="tel:+911234567899"
+                href="tel:+91 9084153502"
                 className=""
                 style={{ color: "white" }}
               >
-                +91 1234567899
+                {""}
+                +91 9084153502
               </a>
             </p>
             <p className="mt-4 " style={{ padding: "4px 0", color: "white" }}>

@@ -86,7 +86,7 @@ function Navbar() {
                 >
                   <Link
                     className="dropList block px-4 hov hover:scale-105 duration-700 "
-                    to="#"
+                    to={"#"}
                     style={{ padding: "4px 20px" }}
                   >
                     {item}
@@ -114,7 +114,7 @@ function Navbar() {
           <li>
             <Link
               className="block text-gray-700 hover:scale-125 duration-700 max-md:"
-              to="/contact"
+              to="/contactus"
             >
               Contact
             </Link>

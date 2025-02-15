@@ -21,7 +21,7 @@ function Catering() {
         </h1>
         <p
           style={{ padding: "10px 6px" }}
-          className="text-lg text-center text-[#222222"
+          className="text-lg text-center text-[#222222]"
         >
           We provide premium catering services for all events, big and small.
           Our team of professionals will work with you to create a custom menu
