@@ -68,7 +68,7 @@ function Gallery() {
       <div className="flex justify-between gap-4 flex-row flex-wrap my-12 px-8">
         {images.map((item, index) => (
           <div
-            className="w-[32%] h-[50vh] rounded-2xl overflow-hidden"
+            className="w-[32%] h-[50vh] rounded-2xl overflow-hidden max-md:w-full "
             key={index}
           >
             <img src={item.url} className="w-full h-full object-cover" />
