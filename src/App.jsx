@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import AnimatedCursor from "react-animated-cursor";
 import Navbar from "./Component/navbar/Navbar";
@@ -18,6 +18,7 @@ import ScrollTop from "./Component/ScrollTop";
 
 function App() {
   const [loading, setLoading] = React.useState(true);
+
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -61,7 +62,7 @@ function App() {
         <Route path="contactus" element={<Contact />} />
         <Route path="*" element={<PageNotFound />} />
         {/* -------------------Menus Routes--------------- */}
-        {/* <Route path="weddingmenu" element={<WeddingMenu />} /> */}
+        <Route path="weddingmenu" element={<WeddingMenu />} />
       </Routes>
       <ScrollList />
       <Footer />

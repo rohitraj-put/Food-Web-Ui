@@ -1,76 +1,38 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
-import CountUp from "react-countup";
+import { FiUsers } from "react-icons/fi";
+import { FaCalendarAlt } from "react-icons/fa";
+import { MdMenuBook } from "react-icons/md";
+import { ImHappy } from "react-icons/im";
 
-function Experience() {
-  const [ref1, inView1] = useInView({ triggerOnce: true });
-  const [ref2, inView2] = useInView({ triggerOnce: true });
-  const [ref3, inView3] = useInView({ triggerOnce: true });
-  const [ref4, inView4] = useInView({ triggerOnce: true });
-
+const Exprience = () => {
   return (
-    <div
-      className="flex justify-center gap-8 flex-row max-md:flex-col"
-      style={{ padding: "10px", marginTop: "20px" }}
-    >
-      <div
-        className="w-[300px] h-44 rounded-2xl overflow-hidden relative max-md:w-full bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://venuscateringservice.com/images/info-bar-4.jpg')",
-        }}
-      >
-        <div className="text-white text-center px-7 py-10">
-          <h1 ref={ref1} className="text-6xl font-bold">
-            {inView1 ? <CountUp end={25} duration={3} /> : "0"}+
-          </h1>
-          <p className="text-md font-extrabold">Years Of Excellence</p>
-        </div>
-      </div>
-      <div
-        className="w-[300px] h-44 rounded-2xl overflow-hidden relative max-md:w-full bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://venuscateringservice.com/images/info-bar-1.jpg')",
-        }}
-      >
-        <div className="text-white text-center px-7 py-10">
-          <h1 ref={ref2} className="text-6xl font-bold">
-            {inView2 ? <CountUp end={250} duration={3} /> : "0"}+
-          </h1>
-          <p className="text-md font-extrabold">Menu Options</p>
-        </div>
-      </div>
-      <div
-        className="w-[300px] h-44 rounded-2xl overflow-hidden relative max-md:w-full bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://venuscateringservice.com/images/info-bar-2.jpg')",
-        }}
-      >
-        <div className="text-white text-center px-7 py-10">
-          <h1 ref={ref3} className="text-6xl font-bold">
-            {inView3 ? <CountUp end={340} duration={3} /> : "0"}+
-          </h1>
-          <p className="text-md font-extrabold">Staff</p>
-        </div>
-      </div>
-      <div
-        className="w-[300px] h-44 rounded-2xl overflow-hidden relative max-md:w-full bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://venuscateringservice.com/images/info-bar-3.jpg')",
-        }}
-      >
-        <div className="text-white text-center px-7 py-10">
-          <h1 ref={ref4} className="text-6xl font-bold">
-            {inView4 ? <CountUp end={125} duration={3} /> : "0"}K
-          </h1>
-          <p className="text-md font-extrabold">Happy Foodies</p>
-        </div>
+    <div className="p-4">
+      <p className="text-xl font-semibold mb-2">Exprience....</p>
+      <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
+        <Card title="Years Of Excellence" subtitle="25+" Icon={FaCalendarAlt} />
+        <Card title="Menu Options" subtitle="250+" Icon={MdMenuBook} />
+        <Card title="Staff" subtitle="340" Icon={FiUsers} />
+        <Card title="Happy Foodies" subtitle="125K" Icon={ImHappy} />
       </div>
     </div>
   );
-}
+};
 
-export default Experience;
+const Card = ({ title, subtitle, Icon }) => {
+  return (
+    <div className="w-full p-4 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white">
+      <div className="absolute inset-0 bg-gradient-to-r from-rose-800 to-rose-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
+
+      <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-100 group-hover:text-rose-400 group-hover:rotate-12 transition-transform duration-300" />
+      <Icon className="mb-2 text-2xl text-rose-800 group-hover:text-white transition-colors relative z-10 duration-300" />
+      <h3 className="font-medium text-lg text-slate-950 group-hover:text-white relative z-10 duration-300">
+        {title}
+      </h3>
+      <p className="text-[#222222] font-extrabold text-2xl group-hover:text-white relative z-10 duration-300">
+        {subtitle}
+      </p>
+    </div>
+  );
+};
+
+export default Exprience;

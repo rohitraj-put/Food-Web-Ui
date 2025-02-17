@@ -30,43 +30,20 @@ const WeddingMenu = () => {
 
   return (
     <div>
-      <div className="page-header parallaxie">
-        <div className="container mx-auto">
-          <div className="row">
-            <div className="col-md-12">
-              {/* Page Header Box start */}
-              <div className="page-header-box">
-                <h1 className="text-anime text-4xl font-bold">Wedding Menu</h1>
-                <nav>
-                  <ol
-                    className="breadcrumb wow fadeInUp"
-                    data-wow-delay="0.50s"
-                  >
-                    <li className="breadcrumb-item">
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li className="breadcrumb-item active"> / Wedding Menu</li>
-                  </ol>
-                </nav>
-              </div>
-              {/* Page Header Box end */}
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="menu-page-section">
-        <div className="container mx-auto">
-          <div className="row">
-            {/* Sidebar Menu Dises Section */}
+        <div className=" mx-auto">
+          <div className="row flex gap-4">
             <div className="col-lg-3 col-md-12">
               <div
-                className="menu-dises-nav wow fadeInLeft"
+                className="menu-dises-nav wow fadeInLeft bg-gray-100 "
                 data-wow-delay="0.75s"
               >
                 <ul>
                   {menuItems.map((item) => (
-                    <li key={item.id} className="d-flex flex-row mb-4">
+                    <li
+                      key={item.id}
+                      className="d-flex flex-row mb-4 px-4 py-1"
+                    >
                       <img
                         src="images/icon-dinner.svg"
                         alt=""
@@ -74,7 +51,7 @@ const WeddingMenu = () => {
                       />
                       <a
                         href="#"
-                        className={`cursor-pointer ${
+                        className={`cursor-pointer   ${
                           activeFilter === item.id ? "active-menu-dises" : ""
                         }`}
                         onClick={() => handleFilterClick(item.id)}
@@ -87,10 +64,27 @@ const WeddingMenu = () => {
               </div>
             </div>
 
-            {/* Menu Items Section */}
             <div className="col-lg-9 col-md-12">
               <div className="row menu-item-boxes wow fadeInUp">
-                {/* Menu items will be dynamically added here */}
+                {menuItems
+                  .filter((item) => item.id === activeFilter)
+                  .map((item) => (
+                    <div key={item.id} className="col-md-6 col-lg-4 mb-4">
+                      <div className="card">
+                        <img
+                          src={`images/menu/${item.id}.jpg`}
+                          className="card-img-top"
+                          alt={item.name}
+                        />
+                        <div className="card-body">
+                          <h5 className="card-title">{item.name}</h5>
+                          <p className="card-text">
+                            Description of {item.name} goes here.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
               </div>
 
               <div className="row">

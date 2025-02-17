@@ -1,14 +1,16 @@
 import React from "react";
+import { DragCards } from "./DragCards";
 
 function StoryCorner() {
   return (
     <>
       <div className="flex justify-between flex-row gap-8 max-md:flex-col p-5 mt-7">
-        <div className="w-1/2 max-md:w-full overflow-hidden rounded-3xl">
-          <img
+        <div className="w-1/2 h-[70vh] max-md:w-full overflow-hidden rounded-3xl">
+          {/* <img
             className="hover:scale-125 duration-300"
             src="https://www.cateringcorner.in/wp-content/themes/cateringcorner-v2/images/webp/home-story-1.webp"
-          />
+          /> */}
+          <DragCards />
         </div>
         <div className="w-1/2 max-md:w-full p-5">
           <h1 className="text-xl font-bold text-rose-800 tracking-widest uppercase">

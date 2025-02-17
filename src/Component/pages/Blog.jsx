@@ -54,7 +54,7 @@ function Blog() {
               <h1 className="text-xl font-bold text-rose-800 py-8 tracking-widest uppercase">
                 {item.date}
               </h1>
-              <h1 className="text-xl font-bold text-[#222222] capitalize">
+              <h1 className="text-md  font-bold text-[#222222] capitalize">
                 {item.title}
               </h1>
             </div>
