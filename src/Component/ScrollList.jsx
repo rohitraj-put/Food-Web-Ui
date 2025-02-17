@@ -26,7 +26,7 @@ function ScrollList() {
         style={{ padding: "10px" }}
       >
         {items.map((item, index) => (
-          <div className="flex items-center ">
+          <div className="flex items-center " key={index}>
             {" "}
             <li key={index} style={{ marginRight: "15px" }}>
               {item}
@@ -38,7 +38,7 @@ function ScrollList() {
           </div>
         ))}
         {items.map((item, index) => (
-          <div className="flex items-center">
+          <div className="flex items-center" key={index}>
             <li key={index + items.length} style={{ marginRight: "15px" }}>
               {item}
             </li>

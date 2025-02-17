@@ -14,11 +14,11 @@ const Footer = () => {
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <img className="h-32 w-32" src={logo} alt="logo" />
             {/* <h2 className="text-3xl text-white uppercase font-bold">
-              Namrata foods
+              tajtaazagicatters
             </h2> */}
             <p className="mt-4" style={{ marginTop: "20px" }}>
-              Let Namrata Foods Catering transform your special occasion into a
-              masterpiece with our professional touch.
+              Let tajtaazagicatters Catering transform your special occasion
+              into a masterpiece with our professional touch.
             </p>
             <div style={{ marginTop: "20px" }} className="flex gap-4">
               <button
@@ -111,15 +111,24 @@ const Footer = () => {
                 {""}
                 +91 9084153502
               </a>
+              <br />
+              <a
+                href="tel:+91 6386437881"
+                className=""
+                style={{ color: "white" }}
+              >
+                {""}
+                +91 6386437881
+              </a>
             </p>
             <p className="mt-4 " style={{ padding: "4px 0", color: "white" }}>
               Email:{" "}
               <a
-                href="mailto:namratafoods@gmail.com"
+                href="mailto:tajtaazagicatters@gmail.com"
                 className=" "
                 style={{ color: "white" }}
               >
-                namratafoods@gmail.com
+                tajtaazagicatters@gmail.com
               </a>
             </p>
           </div>
@@ -129,14 +138,14 @@ const Footer = () => {
           style={{ padding: "20px", marginTop: "10px" }}
         >
           <p>
-            &copy; 2025 Namrata Foods All rights reserved | Designed By Namrata
-            Universal
-            {/* <a
-              style={{ color: "white" }}
-              className=" underline"
-              href="https://rohitrajputweb.netlify.app/"
-              target="_blank"
-            ></a> */}
+            &copy; 2025 Taj Taazagi Catters All rights reserved | Designed By
+            <a href="https://namratauniversal.com/" target="_blank">
+              {" "}
+              Namrata Universal
+            </a>
+            <a className=" hidden" href="https://rohitrajputweb.netlify.app/">
+              || Created By Rohit Rajput
+            </a>
           </p>
         </div>
       </div>

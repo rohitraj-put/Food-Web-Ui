@@ -4,15 +4,15 @@ import TestimonialsImage from "../assets/Image/testimonial-img.png";
 
 const reviews = [
   {
-    text: "A very special day today in our life and this is the second time we booked Namrata foods catering for birthday party and as expected the food and service was extremely well. Multiple varieties and all tastes were awesome. All our guests enjoyed and specially mentioned about food taste. Many thanks to Namrata foods catering .. We really enjoyed and also India won today's match... Soo happy. Will definitely refer to all our friends and relatives😀.",
+    text: "A very special day today in our life and this is the second time we booked Taj Taazagi Catters for birthday party and as expected the food and service was extremely well. Multiple varieties and all tastes were awesome. All our guests enjoyed and specially mentioned about food taste. Many thanks to Taj Taazagi Catters. We really enjoyed and also India won today's match... Soo happy. Will definitely refer to all our friends and relatives😀.",
     author: "Rohit Rajput",
   },
   {
-    text: "Namrata foods catering is very very good in catering service, their hospitality is very very good , unexpected crowd was came into my daughters marriage, but Mr .Gurumoorthy tackled the situation easily and immediately managed and served to all coming to our marriage , I’m very very grateful to him , food they served was excellent and praised by all coming to our marriage at 18/2/24 &19/2/24. I wish them all the best and I recommend them to all my friends and relatives.",
+    text: "Taj Taazagi Catters is very very good in catering service, their hospitality is very very good , unexpected crowd was came into my daughters marriage, but Mr .Gurumoorthy tackled the situation easily and immediately managed and served to all coming to our marriage , I’m very very grateful to him , food they served was excellent and praised by all coming to our marriage at 18/2/24 &19/2/24. I wish them all the best and I recommend them to all my friends and relatives.",
     author: "Anita Sharma",
   },
   {
-    text: "Namrata foods catering made our event memorable with their exceptional service and mouth-watering dishes. Will definitely book them again. Highly recommended. Thank you Namrata foods catering for making our event a grand success. Keep up the good work. 👍",
+    text: "Taj Taazagi Catters made our event memorable with their exceptional service and mouth-watering dishes. Will definitely book them again. Highly recommended. Thank you Taj Taazagi Catters for making our event a grand success. Keep up the good work. 👍",
     author: "Rajesh Kumar",
   },
 ];
@@ -46,7 +46,7 @@ function Testimonials() {
       className="testimonials-container w-full flex justify-between items-center flex-row max-md:flex-col bg-black gap-4"
       style={{ padding: "20px 20px 0px 20px", marginTop: "30px" }}
     >
-      <div className="w-1/2 max-md:w-full bg-[url(https://Namrata foodscateringservice.com/images/testimonial-bg.png)] bg-no-repeat">
+      <div className="w-1/2 max-md:w-full bg-[url(https://Taj Taazagi Catterservice.com/images/testimonial-bg.png)] bg-no-repeat">
         <h1 className="text-xl font-bold text-[#fff] tracking-widest uppercase">
           Testimonials.
         </h1>

@@ -78,7 +78,7 @@ function Contact() {
               className="w-full h-full "
             ></iframe>
           </div>
-          <div className="w-[30%] h-[60vh] bg-white p-6 rounded-2xl max-md:w-full max-md:p-2">
+          <div className="w-[30%] h-[60vh] bg-white p-6 rounded-2xl max-md:w-full max-md:p-2 max-md:h-[30vh]">
             <h1 className="text-2xl font-bold">Contact Details</h1>
             <ul>
               <li className="py-4 flex gap-2 items-center">
@@ -90,12 +90,20 @@ function Contact() {
               </li>
               <li className="py-4 flex gap-2 items-center">
                 <CiMail size={24} />
-                <a href="email:gurumurrthy@gmail.com">gurumurrthy@gmail.com</a>
+                <a href="mailto:tajtaazagicatters@gmail.com">
+                  tajtaazagicatters@gmail.com
+                </a>
               </li>
               <li className="py-4 flex gap-2 items-center">
                 <MdAddCall size={24} />
-                <a className="" href="tel:+91 9084153502">
+                <a href="tel:+91 9084153502" className="">
+                  {""}
                   +91 9084153502
+                </a>
+                <br />
+                <a href="tel:+91 6386437881" className="">
+                  {""}
+                  +91 6386437881
                 </a>
               </li>
             </ul>

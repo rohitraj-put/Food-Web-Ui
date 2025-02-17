@@ -112,7 +112,7 @@ function WhyChoose() {
             Heritage
           </h2>
           <p className="text-[#222222] text-sm font-semibold">
-            Namrata Foods caterings blends food and heart, rooted in family
+            Taj Taazagi Catters blends food and heart, rooted in family
             traditions.
           </p>
         </div>

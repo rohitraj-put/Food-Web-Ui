@@ -46,8 +46,8 @@ function About() {
         </h1>
 
         <p style={{ padding: "10px 0" }} className=" text-lg text-[#222222">
-          Namrata Foods is The Place where Food is Celebrated over 25 Years. We
-          Love to Create Unforgettable Culinary Experiences.
+          Taj Taazagi Catters is The Place where Food is Celebrated over 25
+          Years. We Love to Create Unforgettable Culinary Experiences.
         </p>
 
         <div

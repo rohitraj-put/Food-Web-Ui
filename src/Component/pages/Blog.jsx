@@ -37,7 +37,7 @@ function Blog() {
 
       {/* ---- */}
 
-      <div className="flex justify-center items-center gap-4 flex-wrap my-8">
+      <div className="flex justify-center items-center gap-4 flex-wrap my-8 max-md:px-2">
         {articles.map((item, index) => (
           <div
             key={index}

@@ -113,7 +113,7 @@ function Catering() {
               Make every birthday a memorable one with our birthday photography.
               Whether it’s a child's first birthday or a milestone celebration,
               we capture the joy, excitement, and love of the day and preserve
-              it forever. At Venus Catering Service, we take care of the
+              it forever. At Taj Taazagi Catters Service, we take care of the
               happiness of your guests by offering them amazing food on behalf
               of you.
             </p>

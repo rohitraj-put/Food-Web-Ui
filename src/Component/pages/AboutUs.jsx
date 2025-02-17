@@ -27,8 +27,8 @@ function AboutUs() {
           </h1>
 
           <p className="text-lg mb-4 text-[#222222]">
-            Venus Catering Service is a professional catering company that was
-            established in 1998, offering comprehensive services to meet all
+            Taj Taazagi Catters Service is a professional catering company that
+            was established in 1998, offering comprehensive services to meet all
             your culinary needs for nearly two decades. Our primary goal is to
             provide a unique and memorable dining experience with each meal we
             serve. We are committed to maintaining uncompromised quality,
