@@ -42,44 +42,33 @@ function Testimonials() {
   const currentReview = reviews[currentIndex];
 
   return (
-    <div
-      className="testimonials-container w-full flex justify-between items-center flex-row max-md:flex-col bg-black gap-4"
-      style={{ padding: "20px 20px 0px 20px", marginTop: "30px" }}
-    >
+    <div className="testimonials-container mt-7 w-full flex justify-between items-center flex-row max-md:flex-col bg-black gap-4 pt-5 pr-5 pl-5">
       <div className="w-1/2 max-md:w-full bg-[url(https://Taj Taazagi Catterservice.com/images/testimonial-bg.png)] bg-no-repeat">
         <h1 className="text-xl font-bold text-[#fff] tracking-widest uppercase">
           Testimonials.
         </h1>
-        <h1
-          style={{ padding: "20px 0" }}
-          className="text-6xl font-bold text-white max-md:text-3xl"
-        >
+        <h1 className="text-6xl font-bold text-white max-md:text-3xl py-5">
           What People's Say About us?
         </h1>
 
         <div className={`review-text ${animation} min-h-[250px]`}>
-          <p
-            className="text-lg text-start text-[#fff]"
-            style={{ padding: "10px 0" }}
-          >
+          <p className="text-lg text-start text-[#fff] py-2">
             {currentReview.text}
           </p>
           <h1 className="text-xl font-bold text-[#fff] tracking-widest uppercase">
             {currentReview.author}
           </h1>
         </div>
-        <div style={{ marginTop: "20px" }} className="flex gap-4">
+        <div className="flex gap-4 mt-4">
           <button
-            style={{ padding: "10px 10px" }}
-            className="btn font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
+            className=" font-sans flex justify-center gap-2 items-center  shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 p-2 overflow-hidden border-2 rounded-full"
             type="button"
             onClick={handlePrev}
           >
             <IoArrowBackOutline />
           </button>
           <button
-            style={{ padding: "10px 10px" }}
-            className="btn font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
+            className=" font-sans flex justify-center gap-2 items-center  shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 p-2 overflow-hidden border-2 rounded-full"
             type="button"
             onClick={handleNext}
           >

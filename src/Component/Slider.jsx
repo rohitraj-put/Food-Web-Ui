@@ -36,14 +36,13 @@ function Slider() {
             />
           </h1>
           <p className="p text-[18px] text-white font-semibold">
-            We are the top vegetarian wedding caterer in
-            Noida,Ghaziabad,Delhi,Gurugram. We have completed over 2,000+
-            weddings, supported by a professional team of 340 members.
+            We are the top vegetarian wedding caterer in Agra. We have completed
+            over 2,000+ weddings, supported by a professional team of 340
+            members.
           </p>
           <button
             onClick={changesRoutes}
-            style={{ margin: "auto" }}
-            className="btn font-sans flex justify-center gap-2 items-center  shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
+            className=" mx-auto mt-4 font-sans flex justify-center gap-2 items-center  shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-6 py-2 overflow-hidden border-2 rounded-full"
             type="submit"
           >
             Explore

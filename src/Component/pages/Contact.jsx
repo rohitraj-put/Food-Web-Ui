@@ -26,10 +26,7 @@ function Contact() {
         <h1 className="text-md  font-bold text-rose-800 tracking-widest uppercase">
           Hello Everyone.
         </h1>
-        <h1
-          style={{ padding: "20px 0" }}
-          className="text-5xl font-bold text-[#222222] max-md:text-3xl leading-[65px] max-md:leading-[45px]"
-        >
+        <h1 className="text-5xl font-bold text-[#222222] max-md:text-3xl leading-[65px] max-md:leading-[45px] py-5 ">
           {" "}
           We prepare food just like your home in large quantities. Thats it. Do
           book us and relax.
@@ -40,32 +37,13 @@ function Contact() {
           exquisite culinary experiences tailored to your needs.Your
           satisfaction is our top priority.
         </p>
-        <button
-          className="btn font-sans my-4 flex justify-center gap-2 items-center  shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
-          type="submit"
-        >
-          Book Now
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16 19"
-            className="w-8 h-8 bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 p-2 rotate-45"
-          >
-            <path
-              className="fill-rose-800"
-              d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
-            ></path>
-          </svg>
-        </button>
       </div>
       <div className="bg-gray-100">
         {" "}
         <h1 className="text-md text-center font-bold pt-8 text-rose-800 tracking-widest uppercase">
           Contact Us.
         </h1>
-        <h1
-          style={{ padding: "20px 0" }}
-          className="text-5xl font-bold text-center text-[#222222] max-md:text-3xl"
-        >
+        <h1 className="text-5xl font-bold text-center text-[#222222] py-5 max-md:text-3xl">
           Get In Touch
         </h1>
         <div className="w-full min-h-[70vh]  flex justify-between flex-row flex-wrap gap-4 px-8 py-8 max-md:flex-col max-md:p-2 ">
@@ -78,7 +56,7 @@ function Contact() {
               className="w-full h-full "
             ></iframe>
           </div>
-          <div className="w-[30%] h-[60vh] bg-white p-6 rounded-2xl max-md:w-full max-md:p-2 max-md:h-[30vh]">
+          <div className="w-[30%] min-h-[60vh] bg-white p-6 rounded-2xl max-md:w-full max-md:p-4 max-md:min-h-[30vh]">
             <h1 className="text-2xl font-bold">Contact Details</h1>
             <ul>
               <li className="py-4 flex gap-2 items-center">

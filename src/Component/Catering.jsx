@@ -1,28 +1,23 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function Catering() {
   useEffect(() => {
     Aos.init({ duration: 1200, isOnce: true });
   });
   return (
-    <div className="" style={{ marginTop: "70px" }}>
-      <div className="w-2/3 max-md:w-full" style={{ margin: "auto" }}>
+    <div className="mt-16">
+      <div className="w-2/3 max-md:w-full mx-auto">
         <h1 className="text-xl text-center  font-bold text-rose-800 tracking-widest uppercase">
           What We Do.
         </h1>
-        <h1
-          style={{ padding: "20px 0" }}
-          className="text-5xl text-center font-bold text-[#222222 max-md:text-3xl"
-        >
+        <h1 className="text-5xl text-center font-bold text-[#222222 max-md:text-3xl py-5">
           {" "}
           Premium catering services
         </h1>
-        <p
-          style={{ padding: "10px 6px" }}
-          className="text-lg text-center text-[#222222]"
-        >
+        <p className="text-lg text-center text-[#222222] py-2 px-2">
           We provide premium catering services for all events, big and small.
           Our team of professionals will work with you to create a custom menu
           that fits your needs and budget. Whether you're planning a wedding,
@@ -31,10 +26,7 @@ function Catering() {
         </p>
       </div>
 
-      <div
-        className="flex flex-row max-md:flex-col  justify-center gap-4 overflow-hidden "
-        style={{ padding: "20px" }}
-      >
+      <div className="flex flex-row max-md:flex-col  justify-center gap-4 overflow-hidden p-5">
         <div
           className="w-1/2 min-h-80 bg-gray-100  max-md:w-full rounded-2xl overflow-hidden"
           data-aos="fade-right"
@@ -46,14 +38,11 @@ function Catering() {
               alt="Catering"
             />
           </div>
-          <div className="" style={{ padding: "20px" }}>
+          <div className="p-5">
             <h1 className="text-xl  font-bold text-rose-800 tracking-widest uppercase">
               Wedding Event
             </h1>
-            <p
-              className="text-lg text-start text-[#222222]"
-              style={{ padding: "20px 0" }}
-            >
+            <p className="text-lg text-start text-[#222222] py-5">
               Wedding. Why we have the concept of inviting all our relatives,
               friends and known ones? Its because, when a family celebrates an
               event means, its an occasion, when lot of people celebrates an
@@ -74,14 +63,11 @@ function Catering() {
               alt="Catering"
             />
           </div>
-          <div className="" style={{ padding: "20px" }}>
+          <div className="p-5">
             <h1 className="text-xl  font-bold text-rose-800 tracking-widest uppercase">
               Corporate Event
             </h1>
-            <p
-              className="text-lg text-start text-[#222222]"
-              style={{ padding: "20px 0" }}
-            >
+            <p className="text-lg text-start text-[#222222] py-5">
               From corporate events to business occasions or milestone
               celebrations, our event catering team captures the heart of their
               audiences on their special occasions. We focus on delivering the
@@ -102,14 +88,11 @@ function Catering() {
               alt="Catering"
             />
           </div>
-          <div className="" style={{ padding: "20px" }}>
+          <div className="p-5">
             <h1 className="text-xl font-bold text-rose-800 tracking-widest uppercase">
               Birthday Party
             </h1>
-            <p
-              className="text-lg text-start text-[#222222]"
-              style={{ padding: "20px 0" }}
-            >
+            <p className="text-lg text-start text-[#222222] py-5">
               Make every birthday a memorable one with our birthday photography.
               Whether it’s a child's first birthday or a milestone celebration,
               we capture the joy, excitement, and love of the day and preserve
@@ -120,9 +103,9 @@ function Catering() {
           </div>
         </div>
       </div>
-      <button
-        style={{ margin: "auto", padding: "10px 20px" }}
-        className="btn font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
+      <Link
+        to={"/services"}
+        className="font-sans w-80 flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2.5 overflow-hidden border-2 rounded-full"
         type="submit"
       >
         View All Services
@@ -136,7 +119,7 @@ function Catering() {
             d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
           ></path>
         </svg>
-      </button>
+      </Link>
     </div>
   );
 }

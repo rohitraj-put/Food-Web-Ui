@@ -17,35 +17,23 @@ function ScrollList() {
   ];
 
   return (
-    <div
-      className="scroll-container overflow-hidden"
-      style={{ marginTop: "50px" }}
-    >
-      <ul
-        className="scroll-list bg-rose-800 text-white text-xl max-md:text-sm"
-        style={{ padding: "10px" }}
-      >
+    <div className="scroll-container overflow-hidden mt-12">
+      <ul className="scroll-list bg-rose-800 text-white text-xl max-md:text-sm p-2">
         {items.map((item, index) => (
           <div className="flex items-center " key={index}>
             {" "}
-            <li key={index} style={{ marginRight: "15px" }}>
+            <li key={index} className="mr-4">
               {item}
             </li>
-            <div
-              className="w-2 h-2 rounded-full bg-white"
-              style={{ marginRight: "4px" }}
-            ></div>
+            <div className="w-2 h-2 rounded-full bg-white mr-1"></div>
           </div>
         ))}
         {items.map((item, index) => (
           <div className="flex items-center" key={index}>
-            <li key={index + items.length} style={{ marginRight: "15px" }}>
+            <li key={index + items.length} className="mr-4">
               {item}
             </li>
-            <div
-              className="w-2 h-2 rounded-full bg-white"
-              style={{ marginRight: "4px" }}
-            ></div>
+            <div className="w-2 h-2 rounded-full bg-white mr-1"></div>
           </div>
         ))}
       </ul>

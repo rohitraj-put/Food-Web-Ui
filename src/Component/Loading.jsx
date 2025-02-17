@@ -8,10 +8,7 @@ function Loading() {
           className="w-32 h-32"
           src="https://venuscateringservice.com/images/loader.svg"
         />
-        <div
-          style={{ margin: "auto" }}
-          class="w-10 h-10 border-4 border-t-white border-[#222222] rounded-full animate-spin"
-        ></div>
+        <div class="w-10 h-10 border-4 border-t-white border-[#222222] rounded-full animate-spin mx-auto"></div>
       </div>
     </div>
   );

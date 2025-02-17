@@ -21,7 +21,7 @@ function Navbar() {
     once: true,
   });
   return (
-    <nav className="flex justify-between items-center h-[80px] bg-white shadow-md sticky top-0 z-100 p-14">
+    <nav className="flex justify-between items-center h-[80px] bg-white shadow-md sticky top-0 z-100 px-4">
       <Link to="/" className="overflow-hidden absolute top-2 h-28 w-28 z-20">
         <img
           src={logo}
@@ -133,9 +133,8 @@ function Navbar() {
 
       <div className="flex items-center gap-8">
         <Link
-          style={{ padding: "8px 16px" }}
-          className="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full max-md:hidden"
-          type="submit"
+          to={"tel:+91 9084153502"}
+          className="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full max-md:hidden"
         >
           <a href={"tel:+91 9084153502"} className="text-white ">
             Book Now

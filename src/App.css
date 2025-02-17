@@ -5,22 +5,6 @@
   font-family: 'Inter', sans-serif;
 }
 
-nav {
-  padding: 0 2%;
-}
-
-.btn {
-  padding: 0.8% 2%;
-}
-
-/* a {
-
-  color: #222222;
-} */
-
-.dropList {
-  padding: 1%;
-}
 
 .bgImage {
   background: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1738147213~exp=1738150813~hmac=9ef7d67d55a3c66ceb3f223bbec27697dc1618d773e0702253a304593e612a0b&w=900');
@@ -32,20 +16,7 @@ nav {
 
 }
 
-.p {
-  padding: 1% 0%;
-}
 
-.back {
-  padding: 1%;
-  background-color: #2222222b;
-}
-
-.hov:hover {
-  color: #fff;
-  transition: 0.3s;
-
-}
 
 .review-text {
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;

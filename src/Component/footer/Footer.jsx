@@ -1,54 +1,48 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import logo from "../../assets/Image/11zon_cropped.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer
-      className="bg-black text-white py-8 bg-[url(https://venuscateringservice.com/images/footer-bg.png)]"
-      style={{ padding: "50px 20px" }}
-    >
+    <footer className="bg-black text-white py-8 bg-[url(https://venuscateringservice.com/images/footer-bg.png)]">
       <div className="container mx-auto px-4 md:px-8 lg:px-12">
-        <div className="flex flex-wrap justify-between gap-4">
+        <div className="flex flex-wrap justify-between gap-2">
           {/* Logo and Description */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <img className="h-32 w-32" src={logo} alt="logo" />
             {/* <h2 className="text-3xl text-white uppercase font-bold">
               tajtaazagicatters
             </h2> */}
-            <p className="mt-4" style={{ marginTop: "20px" }}>
-              Let tajtaazagicatters Catering transform your special occasion
-              into a masterpiece with our professional touch.
+            <p className="mt-5">
+              Let Taj Taazagi Catters transform your special occasion into a
+              masterpiece with our professional touch.
             </p>
-            <div style={{ marginTop: "20px" }} className="flex gap-4">
-              <button
-                style={{ padding: "10px 10px" }}
-                className="btn font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
-                type="button"
+            <div className="flex gap-2 mt-5">
+              <Link
+                to={"#"}
+                className="text-lg text-rose-800 bg-white lg:font-semibold  p-2 border-2 rounded-full"
               >
                 <FaLinkedin />
-              </button>
-              <button
-                style={{ padding: "10px 10px" }}
-                className="btn font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
-                type="button"
+              </Link>
+              <Link
+                to={"#"}
+                className="text-lg text-rose-800 bg-white lg:font-semibold  p-2 border-2 rounded-full"
               >
                 <FaYoutube />
-              </button>
-              <button
-                style={{ padding: "10px 10px" }}
-                className="btn font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
-                type="button"
+              </Link>
+              <Link
+                to={"#"}
+                className="text-lg text-rose-800 bg-white lg:font-semibold  p-2 border-2 rounded-full"
               >
                 <FaFacebook />
-              </button>
-              <button
-                style={{ padding: "10px 10px" }}
-                className="btn font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full"
-                type="button"
+              </Link>
+              <Link
+                to={"#"}
+                className="text-lg text-rose-800 bg-white lg:font-semibold  p-2 border-2 rounded-full"
               >
                 <FaInstagram />
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -57,39 +51,19 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-4">Our Services</h2>
             <div className="w-full flex justify-between flex-row gap-2">
               <ul>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  Annaprasana
-                </li>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  Birthday Party
-                </li>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  House Warming
-                </li>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  Mehndi Function
-                </li>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  Corporate Events
-                </li>
+                <li className="mb-2 py-1">Annaprasana</li>
+                <li className="mb-2 py-1">Birthday Party</li>
+                <li className="mb-2 py-1">House Warming</li>
+                <li className="mb-2 py-1">Mehndi Function</li>
+                <li className="mb-2 py-1">Corporate Events</li>
               </ul>
               <ul>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  Wedding Event
-                </li>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  60th Wedding Event
-                </li>
+                <li className="mb-2 py-1">Wedding Event</li>
+                <li className="mb-2 py-1">60th Wedding Event</li>
 
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  Engagement
-                </li>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  Seemantham
-                </li>
-                <li style={{ padding: "4px 0" }} className="mb-2">
-                  Seemantham
-                </li>
+                <li className="mb-2 py-1">Engagement</li>
+                <li className="mb-2 py-1">Seemantham</li>
+                <li className="mb-2 py-1">Seemantham</li>
               </ul>
             </div>
           </div>
@@ -97,11 +71,11 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="w-full md:w-1/3">
             <h2 className="text-xl font-bold mb-4">Contact Now</h2>
-            <p style={{ padding: "4px 0" }}>
+            <p className="py-1">
               At. Kh No. 61, In Front Of Basera Near Hotel Jaya Pee Palace,
               Fatehabad Road,
             </p>
-            <p className="mt-4" style={{ padding: "4px 0" }}>
+            <p className="mt-4 py-1">
               Phone:
               <a
                 href="tel:+91 9084153502"
@@ -112,31 +86,23 @@ const Footer = () => {
                 +91 9084153502
               </a>
               <br />
-              <a
-                href="tel:+91 6386437881"
-                className=""
-                style={{ color: "white" }}
-              >
+              <a href="tel:+91 6386437881" className="text-white">
                 {""}
                 +91 6386437881
               </a>
             </p>
-            <p className="mt-4 " style={{ padding: "4px 0", color: "white" }}>
+            <p className="mt-4 text-white py-1 ">
               Email:{" "}
               <a
                 href="mailto:tajtaazagicatters@gmail.com"
-                className=" "
-                style={{ color: "white" }}
+                className="text-white"
               >
                 tajtaazagicatters@gmail.com
               </a>
             </p>
           </div>
         </div>
-        <div
-          className="border-t border-gray-700 mt-8 pt-4 text-center"
-          style={{ padding: "20px", marginTop: "10px" }}
-        >
+        <div className="border-t border-gray-700 mt-8 pt-4 text-center p-5">
           <p>
             &copy; 2025 Taj Taazagi Catters All rights reserved | Designed By
             <a href="https://namratauniversal.com/" target="_blank">

@@ -73,7 +73,7 @@ function Gallery() {
         </div>
       </div>
 
-      <div className="flex justify-between gap-4 flex-row flex-wrap my-12 px-8">
+      <div className="flex justify-between gap-4 flex-row flex-wrap my-12 px-8 max-md:px-2">
         {images.map((item, index) => (
           <div
             className="w-[32%] h-[50vh] max-md:h-[35vh] rounded-2xl overflow-hidden max-md:w-full relative group"
