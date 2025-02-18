@@ -17,10 +17,10 @@ function About() {
     Aos.init({ duration: 600, isOnce: true });
   });
   return (
-    <div className="flex flex-row max-md:flex-col  justify-center py-10 gap-2 mt-12 px-10 max-md:px-2">
-      <div className="w-1/2 h-[100vh] flex justify-between gap-4 max-md:w-full overflow-hidden">
+    <div className="flex flex-row  max-md:flex-col-reverse  justify-center py-10 gap-2 mt-12 max-md:mt-4 px-10 max-md:px-2">
+      <div className="w-1/2 h-[100vh] max-md:h-full flex justify-between gap-4 max-md:w-full overflow-hidden">
         <div
-          className="w-1/2 bg-rose-gray-300 rounded-2xl overflow-hidden"
+          className="w-1/2 bg-rose-gray-300 rounded-2xl overflow-hidden max-md:hidden"
           data-aos="fade-right"
         >
           <img
@@ -30,7 +30,7 @@ function About() {
           />
         </div>
         <div
-          className="w-1/2 h-full bg-rose-gray-300 rounded-2xl overflow-hidden"
+          className="w-1/2 h-full bg-rose-gray-300 rounded-2xl overflow-hidden max-md:w-full"
           data-aos="fade-right"
         >
           {/* <img
@@ -38,9 +38,9 @@ function About() {
             src="	https://venuscateringservice.com/myimages/about3.jpg"
             alt="foods"
           /> */}
-          <div className="relative h-full">
+          <div className="relative h-full w-full">
             <video
-              className="h-full object-cover"
+              className="h-full w-full object-cover"
               loop
               muted={isMuted}
               autoPlay
