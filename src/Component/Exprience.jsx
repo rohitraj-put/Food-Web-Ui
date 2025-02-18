@@ -7,7 +7,7 @@ import { ImHappy } from "react-icons/im";
 const Exprience = () => {
   return (
     <div className="p-4">
-      <p className="text-xl font-semibold mb-2">Exprience....</p>
+      <p className="text-2xl font-semibold mb-2 uppercase">Exprience....</p>
       <div className="grid gap-4 grid-cols-2 lg:grid-cols-4">
         <Card title="Years Of Excellence" subtitle="25+" Icon={FaCalendarAlt} />
         <Card title="Menu Options" subtitle="250+" Icon={MdMenuBook} />

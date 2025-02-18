@@ -1,15 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import insta from "../assets/video/Insta.mp4";
+import { GoMute } from "react-icons/go";
+import { GoUnmute } from "react-icons/go";
 
 function About() {
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef(null);
+
+  const handleSoundToggle = () => {
+    setIsMuted(!isMuted);
+  };
   useEffect(() => {
     Aos.init({ duration: 600, isOnce: true });
   });
   return (
     <div className="flex flex-row max-md:flex-col  justify-center py-10 gap-2 mt-12 px-10 max-md:px-2">
-      <div className="w-1/2 flex justify-between gap-4 max-md:w-full overflow-hidden">
+      <div className="w-1/2 h-[100vh] flex justify-between gap-4 max-md:w-full overflow-hidden">
         <div
           className="w-1/2 bg-rose-gray-300 rounded-2xl overflow-hidden"
           data-aos="fade-right"
@@ -21,14 +30,31 @@ function About() {
           />
         </div>
         <div
-          className="w-1/2 bg-rose-gray-300 rounded-2xl overflow-hidden"
+          className="w-1/2 h-full bg-rose-gray-300 rounded-2xl overflow-hidden"
           data-aos="fade-right"
         >
-          <img
+          {/* <img
             className="w-full h-full hover:scale-125 duration-700"
             src="	https://venuscateringservice.com/myimages/about3.jpg"
             alt="foods"
-          />
+          /> */}
+          <div className="relative h-full">
+            <video
+              className="h-full object-cover"
+              loop
+              muted={isMuted}
+              autoPlay
+              ref={videoRef}
+            >
+              <source src={insta} type="video/mp4" />
+            </video>
+            <button
+              onClick={handleSoundToggle}
+              className="absolute top-4 right-4  text-white p-2 rounded"
+            >
+              {isMuted ? <GoMute size={32} /> : <GoUnmute size={32} />}
+            </button>
+          </div>
         </div>
       </div>
       <div className="w-1/2 max-md:w-full p-7 max-md:px-2">

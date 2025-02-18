@@ -1,5 +1,5 @@
 import React from "react";
-import { MdLocationOn } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import { MdAddCall } from "react-icons/md";
 
@@ -47,7 +47,7 @@ function Contact() {
           Get In Touch
         </h1>
         <div className="w-full min-h-[70vh]  flex justify-between flex-row flex-wrap gap-4 px-8 py-8 max-md:flex-col max-md:p-2 ">
-          <div className="w-[66%] h-[60vh]  overflow-hidden max-md:w-full">
+          <div className="w-[66%] h-[60vh]  overflow-hidden max-md:w-full border-rose-800 border-[1px] rounded-2xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3550.077241238811!2d78.0688040741044!3d27.153859849688256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!1s0x3974713cc4a9238b%3A0x94adedd7bc3afe5b!5e0!3m2!1shi!2sin!4v1739608095645!5m2!1shi!2sin"
               allowfullscreen=""
@@ -60,10 +60,10 @@ function Contact() {
             <h1 className="text-2xl font-bold">Contact Details</h1>
             <ul>
               <li className="py-4 flex gap-2 items-center">
-                <MdLocationOn size={32} />
+                <FaLocationDot size={32} />
                 <a>
                   At. Kh No. 61, In Front Of Basera Near Hotel Jaya Pee Palace,
-                  Fatehabad Road,
+                  Fatehabad Road, Agra.
                 </a>
               </li>
               <li className="py-4 flex gap-2 items-center">

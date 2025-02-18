@@ -2,6 +2,9 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import logo from "../../assets/Image/11zon_cropped.png";
 import { Link } from "react-router-dom";
+import { FaLocationDot } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
+import { MdAddCall } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -71,12 +74,12 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="w-full md:w-1/3">
             <h2 className="text-xl font-bold mb-4">Contact Now</h2>
-            <p className="py-1">
-              At. Kh No. 61, In Front Of Basera Near Hotel Jaya Pee Palace,
-              Fatehabad Road,
+            <p className="py-1 flex gap-1 items-center">
+              <FaLocationDot size={32} /> At. Kh No. 61, In Front Of Basera Near
+              Hotel Jaya Pee Palace, Fatehabad Road, Agra.
             </p>
-            <p className="mt-4 py-1">
-              Phone:
+            <p className="mt-4 py-1 flex gap-1 items-center">
+              <MdAddCall size={32} />
               <a
                 href="tel:+91 9084153502"
                 className=""
@@ -91,8 +94,8 @@ const Footer = () => {
                 +91 6386437881
               </a>
             </p>
-            <p className="mt-4 text-white py-1 ">
-              Email:{" "}
+            <p className="mt-4 text-white py-1 flex gap-1 items-center">
+              <CiMail size={32} />
               <a
                 href="mailto:tajtaazagicatters@gmail.com"
                 className="text-white"

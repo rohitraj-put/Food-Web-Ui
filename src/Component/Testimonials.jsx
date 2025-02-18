@@ -13,7 +13,7 @@ const reviews = [
   },
   {
     text: "Taj Taazagi Catters made our event memorable with their exceptional service and mouth-watering dishes. Will definitely book them again. Highly recommended. Thank you Taj Taazagi Catters for making our event a grand success. Keep up the good work. 👍",
-    author: "Rajesh Kumar",
+    author: "Nitish Yadav",
   },
 ];
 
