@@ -113,6 +113,7 @@ function Service() {
             <div className="w-full flex-1 overflow-hidden">
               <img
                 className="w-full h-full hover:scale-125 duration-700 object-cover"
+                loading="lazy"
                 src={item.image}
                 alt={item.title}
               />

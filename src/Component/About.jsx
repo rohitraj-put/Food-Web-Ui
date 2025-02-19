@@ -73,36 +73,39 @@ function About() {
 
         <div className="flex justify-center flex-row gap-2 py-2.5">
           <div
-            className="w-48 max-md:min-h-52 min-h-44 shadow-xl  rounded-md bg-white py-2.5"
+            className="w-48 max-md:w-full max-md:min-h-52 min-h-44 shadow-xl  rounded-md bg-white py-2.5"
             data-aos="flip-down"
           >
             <img
               src="https://venuscateringservice.com/myimages/wcu2.png"
               className="w-20 mx-auto"
+              alt="Experience"
             />
             <h2 className="text-[#222222 text-lg font-semibold p-2">
               25 Years of Experience
             </h2>
           </div>
           <div
-            className="w-48 max-md:min-h-52 min-h-44 shadow-xl  py-2.5 rounded-md bg-white"
+            className="w-48 max-md:w-full max-md:min-h-52 min-h-44 shadow-xl  py-2.5 rounded-md bg-white"
             data-aos="flip-down"
           >
             <img
               src="https://venuscateringservice.com/myimages/wcu1.png"
               className="w-20 mx-auto"
+              alt="Experience"
             />
             <h2 className="text-[#222222 text-lg font-semibold p-2">
               2000+ Successful Marriages
             </h2>
           </div>
           <div
-            className="w-48 max-md:min-h-52 min-h-44 shadow-xl  py-2.5 rounded-md bg-white"
+            className="w-48 max-md:w-full max-md:min-h-52 min-h-44 shadow-xl  py-2.5 rounded-md bg-white"
             data-aos="flip-down"
           >
             <img
               src="https://venuscateringservice.com/myimages/wcu3.png"
               className="w-20 mx-auto"
+              alt="Experience"
             />
             <h2 className="text-[#222222 text-lg font-semibold p-2">
               98% Repeated Customers

@@ -17,9 +17,9 @@ import PageNotFound from "./Component/PNF/PageNotFound";
 import ScrollTop from "./Component/ScrollTop";
 
 function App() {
-  const [loading, setLoading] = React.useState(true);
+  const [loading, setLoading] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 1000);
