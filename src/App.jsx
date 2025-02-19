@@ -12,9 +12,14 @@ import Gallery from "./Component/pages/Gallery";
 import Blog from "./Component/pages/Blog";
 import Contact from "./Component/pages/Contact";
 import AboutUs from "./Component/pages/AboutUs";
-import WeddingMenu from "./Component/Menus/WeddingMenu";
 import PageNotFound from "./Component/PNF/PageNotFound";
 import ScrollTop from "./Component/ScrollTop";
+import WeddingMenu from "../src/Component/Menus/WeddingMenu";
+import BirthdayMenu from "./Component/Menus/BirthdayMenu";
+import CorporateEventMenu from "./Component/Menus/CorporateEventMenu";
+import AnniversaryMenu from "./Component/Menus/AnniversaryMenu";
+import SpecialOccasionMenu from "./Component/Menus/SpecialOccasionMenu";
+import SeasonalSpecialsMenu from "./Component/Menus/SeasonalSpecialsMenu";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -62,6 +67,11 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
         {/* -------------------Menus Routes--------------- */}
         <Route path="weddingmenu" element={<WeddingMenu />} />
+        <Route path="birthdaymenu" element={<BirthdayMenu />} />
+        <Route path="corporatemenu" element={<CorporateEventMenu />} />
+        <Route path="anniversarymenu" element={<AnniversaryMenu />} />
+        <Route path="specialoccasionmenu" element={<SpecialOccasionMenu />} />
+        <Route path="seasonalmenu" element={<SeasonalSpecialsMenu />} />
       </Routes>
       <ScrollList />
       <Footer />

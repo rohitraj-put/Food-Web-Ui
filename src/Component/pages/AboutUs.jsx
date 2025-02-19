@@ -96,7 +96,7 @@ function AboutUs() {
         </div>
         <div className="w-1/2 mt-5 md:mt-0 max-md:w-full">
           <img
-            src="https://venuscateringservice.com/myimages/aboutcater.png"
+            src="https://cdn.pixabay.com/photo/2013/02/09/04/28/sous-chef-79598_1280.jpg"
             alt="Catering Service"
             className="w-full h-auto rounded-md shadow-md"
           />

@@ -6,19 +6,19 @@ const sectionVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-const WeddingMenu = () => {
+const SeasonalSpecialsMenu = () => {
   return (
-    <div className="bg-pink-50 min-h-screen p-6 flex justify-center items-center">
+    <div className="bg-green-50 min-h-screen p-6 flex justify-center items-center">
       <motion.div
         className="bg-white shadow-xl rounded-2xl p-8 max-w-2xl w-full text-center"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1, transition: { duration: 0.5 } }}
       >
-        <h1 className="text-4xl font-extrabold text-pink-600 mb-4">
-          Wedding Menu
+        <h1 className="text-4xl font-extrabold text-green-700 mb-4">
+          Seasonal Specials Menu
         </h1>
         <p className="text-gray-600 italic mb-6">
-          A special selection for a memorable day
+          A fresh selection inspired by the season
         </p>
 
         <div className="space-y-6">
@@ -26,42 +26,42 @@ const WeddingMenu = () => {
             (category, index) => (
               <motion.section
                 key={category}
-                className="bg-pink-100 p-4 rounded-xl shadow-md"
+                className="bg-green-100 p-4 rounded-xl shadow-md"
                 variants={sectionVariants}
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: index * 0.2 }}
               >
-                <h2 className="text-2xl font-semibold text-pink-500 mb-2">
+                <h2 className="text-2xl font-semibold text-green-600 mb-2">
                   {category}
                 </h2>
                 <ul className="text-gray-700">
                   {category === "Appetizers" && (
                     <>
-                      <li>🥗 Caesar Salad with Parmesan</li>
-                      <li>🦐 Shrimp Cocktail</li>
-                      <li>🍲 Tomato Basil Soup</li>
+                      <li>🥗 Spring Pea & Mint Salad</li>
+                      <li>🍄 Wild Mushroom Bruschetta</li>
+                      <li>🍜 Butternut Squash Soup</li>
                     </>
                   )}
                   {category === "Main Course" && (
                     <>
-                      <li>🥩 Grilled Filet Mignon with Garlic Butter</li>
-                      <li>🐟 Lemon Herb Salmon</li>
-                      <li>🍝 Truffle Mushroom Risotto</li>
+                      <li>🐟 Cedar Plank Salmon with Citrus Glaze</li>
+                      <li>🥩 Grilled Lamb Chops with Rosemary</li>
+                      <li>🍆 Stuffed Eggplant with Quinoa & Feta</li>
                     </>
                   )}
                   {category === "Desserts" && (
                     <>
-                      <li>🍰 Red Velvet Cake</li>
-                      <li>🍮 Crème Brûlée</li>
-                      <li>🍓 Chocolate Dipped Strawberries</li>
+                      <li>🍓 Fresh Berry Pavlova</li>
+                      <li>🍋 Lemon Tart with Almond Crust</li>
+                      <li>🍏 Spiced Apple Crumble</li>
                     </>
                   )}
                   {category === "Drinks" && (
                     <>
-                      <li>🍷 Fine Red & White Wine</li>
-                      <li>🍹 Signature Wedding Cocktails</li>
-                      <li>☕ Freshly Brewed Coffee & Tea</li>
+                      <li>🍹 Cucumber & Basil Spritz</li>
+                      <li>🍷 Seasonal Mulled Wine</li>
+                      <li>☕ Spiced Chai Latte</li>
                     </>
                   )}
                 </ul>
@@ -74,4 +74,4 @@ const WeddingMenu = () => {
   );
 };
 
-export default WeddingMenu;
+export default SeasonalSpecialsMenu;

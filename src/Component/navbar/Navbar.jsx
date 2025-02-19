@@ -12,12 +12,12 @@ const menuItems = [
     label: "Menu",
     path: "#",
     submenu: [
-      "Wedding Menu",
-      "Anniversary Menu",
-      "Birthday Menu",
-      "Corporate Events",
-      "Special Occasions",
-      "Seasonal Specials",
+      { label: "Wedding Menu", path: "/weddingmenu" },
+      { label: "Anniversary Menu", path: "/anniversarymenu" },
+      { label: "Birthday Menu", path: "/birthdaymenu" },
+      { label: "Corporate Events", path: "/corporatemenu" },
+      { label: "Special Occasions", path: "/specialoccasionmenu" },
+      { label: "Seasonal Specials", path: "/seasonalmenu" },
     ],
   },
   { label: "Gallery", path: "/gallery" },
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <Link
                   to={item.path}
                   className={cn(
-                    "text-gray-600 hover:text-gray-900 px-3 py-2 text-md font-medium transition-all duration-200 relative group",
+                    "text-gray-900 hover:text-rose-800 px-3 py-2 text-md font-medium transition-all duration-200 relative group",
                     "after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-gray-900 after:transition-transform after:duration-300 hover:after:scale-x-100"
                   )}
                   onClick={() => !item.submenu && closeMenu()}
@@ -100,14 +100,14 @@ const Navbar = () => {
                     )}
                   >
                     <div className=" bg-white py-1 shadow-lg  ">
-                      {item.submenu.map((subItem) => (
+                      {item.submenu.map((subItem, index) => (
                         <Link
-                          key={subItem}
-                          to="#"
+                          key={index}
+                          to={subItem.path}
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-rose-800 hover:text-white  transition-colors duration-150"
                           onClick={closeMenu}
                         >
-                          {subItem}
+                          {subItem.label}
                         </Link>
                       ))}
                     </div>
@@ -165,7 +165,10 @@ const Navbar = () => {
                 }}
               >
                 <span className="flex items-center justify-between">
-                  <Link to={item.path}> {item.label}</Link>
+                  <Link to={item.path} className="hover:text-rose-800">
+                    {" "}
+                    {item.label}
+                  </Link>
                   {item.submenu && (
                     <ChevronDown
                       className={cn(
@@ -186,14 +189,14 @@ const Navbar = () => {
                       : "max-h-0 opacity-0 overflow-hidden"
                   )}
                 >
-                  {item.submenu.map((subItem) => (
+                  {item.submenu.map((subItem, index) => (
                     <Link
-                      key={subItem}
-                      to="#"
-                      className="block pl-6 pr-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors duration-150"
+                      key={index}
+                      to={subItem.path}
+                      className="block pl-6 pr-3 py-2 text-base font-medium text-gray-800 hover:text-rose-800 hover:bg-gray-50 rounded-md transition-colors duration-150"
                       onClick={closeMenu}
                     >
-                      {subItem}
+                      {subItem.label}
                     </Link>
                   ))}
                 </div>

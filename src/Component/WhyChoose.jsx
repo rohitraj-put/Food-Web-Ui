@@ -31,7 +31,7 @@ function WhyChoose() {
       {/* -----servers promissed----- */}
       <div className="flex justify-between flex-row max-md:flex-col gap-2 pt-2">
         <div
-          className=" max-md:h-52 min-h-48 shadow-xl text-center rounded-md bg-white p-7"
+          className=" max-md:h-52 min-h-48 shadow-sm text-center rounded-md bg-white p-7"
           data-aos="flip-up"
         >
           <img src={n1} className="w-20 mx-auto" />
@@ -43,7 +43,7 @@ function WhyChoose() {
           </p>
         </div>
         <div
-          className=" max-md:h-52 min-h-48 shadow-xl text-center rounded-md bg-white p-7"
+          className=" max-md:h-52 min-h-48 shadow-sm text-center rounded-md bg-white p-7"
           data-aos="flip-up"
         >
           <img src={n2} className="w-20 mx-auto" />
@@ -55,7 +55,7 @@ function WhyChoose() {
           </p>
         </div>
         <div
-          className="max-md:h-68 min-h-48 shadow-xl text-center  rounded-md bg-white p-7"
+          className="max-md:h-68 min-h-48 shadow-sm text-center  rounded-md bg-white p-7"
           data-aos="flip-up"
         >
           <img src={n3} className="w-20 mx-auto" />
@@ -67,7 +67,7 @@ function WhyChoose() {
           </p>
         </div>
         <div
-          className=" max-md:h-52 min-h-48 shadow-xl text-center rounded-md bg-white p-7"
+          className=" max-md:h-52 min-h-48 shadow-sm text-center rounded-md bg-white p-7"
           data-aos="flip-up"
         >
           <img src={n4} className="w-20 mx-auto" />
