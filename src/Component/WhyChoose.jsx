@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import n1 from "../assets/Image/n1.png";
+import n2 from "../assets/Image/n2.png";
+import n3 from "../assets/Image/n3.png";
+import n4 from "../assets/Image/n4.png";
 
 function WhyChoose() {
   useEffect(() => {
@@ -30,10 +34,7 @@ function WhyChoose() {
           className=" max-md:h-52 min-h-48 shadow-xl text-center rounded-md bg-white p-7"
           data-aos="flip-up"
         >
-          <img
-            src="https://venuscateringservice.com/myimages/n1.png"
-            className="w-20 mx-auto"
-          />
+          <img src={n1} className="w-20 mx-auto" />
           <h2 className="text-[#222222 text-lg font-semibold py-2">
             Authentic Taste
           </h2>
@@ -45,10 +46,7 @@ function WhyChoose() {
           className=" max-md:h-52 min-h-48 shadow-xl text-center rounded-md bg-white p-7"
           data-aos="flip-up"
         >
-          <img
-            src="https://venuscateringservice.com/myimages/n2.png"
-            className="w-20 mx-auto"
-          />
+          <img src={n2} className="w-20 mx-auto" />
           <h2 className="text-[#222222 text-lg font-semibold py-2">
             Service Excellence
           </h2>
@@ -60,10 +58,7 @@ function WhyChoose() {
           className="max-md:h-68 min-h-48 shadow-xl text-center  rounded-md bg-white p-7"
           data-aos="flip-up"
         >
-          <img
-            src="https://venuscateringservice.com/myimages/n3.png"
-            className="w-20 mx-auto"
-          />
+          <img src={n3} className="w-20 mx-auto" />
           <h2 className="text-[#222222 text-lg font-semibold py-2">
             Best Quality
           </h2>
@@ -75,10 +70,7 @@ function WhyChoose() {
           className=" max-md:h-52 min-h-48 shadow-xl text-center rounded-md bg-white p-7"
           data-aos="flip-up"
         >
-          <img
-            src="https://venuscateringservice.com/myimages/n4.png"
-            className="w-20 mx-auto"
-          />
+          <img src={n4} className="w-20 mx-auto" />
           <h2 className="text-[#222222 text-lg font-semibold py-2">Heritage</h2>
           <p className="text-[#222222] text-sm font-semibold">
             Taj Taazagi Catters blends food and heart, rooted in family

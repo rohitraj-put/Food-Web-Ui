@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import insta from "../assets/video/Insta.mp4";
 import { GoMute } from "react-icons/go";
 import { GoUnmute } from "react-icons/go";
+import aboutImage from "../assets/Image/aboutImg.jpg";
+import Taj1 from "../assets/Image/Taj1.png";
+import Taj2 from "../assets/Image/Taj2.png";
+import Taj3 from "../assets/Image/Taj3.png";
 
 function About() {
   const [isMuted, setIsMuted] = useState(true);
@@ -25,7 +29,7 @@ function About() {
         >
           <img
             className="w-full h-full hover:scale-125 duration-700"
-            src="https://venuscateringservice.com/myimages/aboutus.jpg"
+            src={aboutImage}
             alt="foods"
           />
         </div>
@@ -76,11 +80,7 @@ function About() {
             className="w-48 max-md:w-full max-md:min-h-52 min-h-44 shadow-xl  rounded-md bg-white py-2.5"
             data-aos="flip-down"
           >
-            <img
-              src="https://venuscateringservice.com/myimages/wcu2.png"
-              className="w-20 mx-auto"
-              alt="Experience"
-            />
+            <img src={Taj1} className="w-20 mx-auto" alt="Experience" />
             <h2 className="text-[#222222 text-lg font-semibold p-2">
               25 Years of Experience
             </h2>
@@ -89,11 +89,7 @@ function About() {
             className="w-48 max-md:w-full max-md:min-h-52 min-h-44 shadow-xl  py-2.5 rounded-md bg-white"
             data-aos="flip-down"
           >
-            <img
-              src="https://venuscateringservice.com/myimages/wcu1.png"
-              className="w-20 mx-auto"
-              alt="Experience"
-            />
+            <img src={Taj2} className="w-20 mx-auto" alt="Experience" />
             <h2 className="text-[#222222 text-lg font-semibold p-2">
               2000+ Successful Marriages
             </h2>
@@ -102,11 +98,7 @@ function About() {
             className="w-48 max-md:w-full max-md:min-h-52 min-h-44 shadow-xl  py-2.5 rounded-md bg-white"
             data-aos="flip-down"
           >
-            <img
-              src="https://venuscateringservice.com/myimages/wcu3.png"
-              className="w-20 mx-auto"
-              alt="Experience"
-            />
+            <img src={Taj3} className="w-20 mx-auto" alt="Experience" />
             <h2 className="text-[#222222 text-lg font-semibold p-2">
               98% Repeated Customers
             </h2>

@@ -1,7 +1,7 @@
 import React from "react";
-import About from "../About";
 import { Link } from "react-router-dom";
 import Testimonials from "../Testimonials";
+import AboutImg from "../../assets/Image/about.jpg";
 
 function AboutUs() {
   return (
@@ -10,7 +10,7 @@ function AboutUs() {
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://venuscateringservice.com/myimages/otherpagesbg.jpg')",
+            "url('https://cdn.pixabay.com/photo/2019/09/26/13/24/food-4505944_1280.jpg')",
         }}
       >
         <div className="text-center text-white p-8  bg-opacity-50 rounded-lg">
@@ -25,13 +25,11 @@ function AboutUs() {
           className="flex flex-row max-md:flex-col  justify-center p-10 gap-2"
           style={{ padding: "10px", marginTop: "70px" }}
         >
-          <div
-            className="w-1/2 h-[120vh] max-md:h-[60vh] flex justify-between gap-4 max-md:w-full rounded-2xl overflow-hidden"
-            data-aos="fade-right"
-          >
+          <div className="w-1/2 h-[120vh] max-md:h-[60vh] flex justify-between gap-4 max-md:w-full rounded-2xl overflow-hidden">
             <img
               className="w-full h-full object-cover  hover:scale-125 duration-700 "
-              src="https://img.freepik.com/free-photo/beans-sprout-surrounded-with-salad-sauce-spring-rolls-noodles_23-2148093243.jpg?t=st=1739776982~exp=1739780582~hmac=563ccf5fadf0c5b0980705bc4a11d07d04570b4c5431c7319ccebc8f9230640b&w=740"
+              src={AboutImg}
+              loading="lazy"
               alt="foods"
             />
           </div>

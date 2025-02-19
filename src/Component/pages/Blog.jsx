@@ -32,7 +32,7 @@ function Blog() {
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://venuscateringservice.com/myimages/otherpagesbg.jpg')",
+            "url('https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_1280.jpg')",
         }}
       >
         <div className="text-center text-white p-8  bg-opacity-50 rounded-lg">

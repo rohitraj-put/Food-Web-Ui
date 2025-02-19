@@ -82,7 +82,7 @@ function Service() {
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://venuscateringservice.com/myimages/otherpagesbg.jpg')",
+            "url('https://cdn.pixabay.com/photo/2016/11/20/14/36/vegetable-1842913_1280.jpg')",
         }}
       >
         <div className="text-center text-white p-8  bg-opacity-50 rounded-lg">

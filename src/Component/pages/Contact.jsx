@@ -10,7 +10,7 @@ function Contact() {
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://venuscateringservice.com/myimages/otherpagesbg.jpg')",
+            "url('https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg')",
         }}
       >
         <div className="text-center text-white p-8  bg-opacity-50 rounded-lg">

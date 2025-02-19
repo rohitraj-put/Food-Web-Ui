@@ -1,12 +1,18 @@
 import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import biryani from "../../assets/Image/biryani.jpg";
+import paneer from "../../assets/Image/paneer.jpg";
+import paneerTeeka from "../../assets/Image/paneer-tikka.jpg";
+import pannaCotta from "../../assets/Image/panna-cotta.jpg";
+import idli from "../../assets/Image/idli.jpg";
+import sheed from "../../assets/Image/sheed.jpg";
 
 function Gallery() {
   const images = [
     {
       id: 1,
-      url: "https://img.freepik.com/free-photo/close-up-delicious-acai-cereal-bowl_23-2149258877.jpg?t=st=1739772927~exp=1739776527~hmac=3a2260df3403b5b5d0916a2c1ed5dc7dd16264a34fd61be92369508389f0eefd&w=740",
+      url: sheed,
       description: "Chia Seed Pudding",
     },
     {
@@ -21,7 +27,7 @@ function Gallery() {
     },
     {
       id: 4,
-      url: "https://img.freepik.com/free-photo/side-view-rice-garnish-with-fried-onion-carrot-greens-chili-pepper-table_141793-5069.jpg?t=st=1739773119~exp=1739776719~hmac=cde7ff579a8eaa6bd9b2c80635a9f34c8625f2ea20386381abe71e84e41ffa3d&w=996",
+      url: biryani,
       description: "Vegetable Biryani",
     },
     {
@@ -31,22 +37,22 @@ function Gallery() {
     },
     {
       id: 6,
-      url: "https://www.thestatesman.com/wp-content/uploads/2019/04/idli.jpg",
+      url: idli,
       description: " South Indian meal - Idli,Dosa",
     },
     {
       id: 7,
-      url: "https://img.freepik.com/free-photo/pre-prepared-food-showcasing-ready-eat-delicious-meals-go_23-2151246080.jpg?t=st=1739773385~exp=1739776985~hmac=682d765d364a9961b3acab6c7a4f852a1e43ff0c5eb5a1e52c06c137409b029d&w=740",
+      url: paneer,
       description: "Paneer Curry",
     },
     {
       id: 8,
-      url: "https://img.freepik.com/free-photo/chicken-skewers-with-slices-apples-chili_2829-19997.jpg?t=st=1739773432~exp=1739777032~hmac=56b8881feff32a93684929beb2cd2d244730f39f499f3d1b9ff08be0dbde6892&w=996",
+      url: paneerTeeka,
       description: "Tandoori Paneer Tikka",
     },
     {
       id: 9,
-      url: "https://img.freepik.com/free-photo/homemade-mango-yoghurt-marble-surface_1150-41963.jpg?t=st=1739773459~exp=1739777059~hmac=43112dddcfc294ac462fc517da0f8447f6ce75f5ecbbeeae91f5e46c9e3a11d1&w=996",
+      url: pannaCotta,
       description: "Mango Panna Cotta, an Italian dessert",
     },
   ];
@@ -64,7 +70,7 @@ function Gallery() {
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://venuscateringservice.com/myimages/otherpagesbg.jpg')",
+            "url('https://cdn.pixabay.com/photo/2018/07/14/21/30/club-sandwich-3538455_1280.jpg')",
         }}
       >
         <div className="text-center text-white p-8 bg-opacity-50 rounded-lg">
