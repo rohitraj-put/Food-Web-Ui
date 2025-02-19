@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 import Navbar from "./Component/navbar/Navbar";
 import Loading from "./Component/Loading";
 import Footer from "./Component/footer/Footer";
@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <ScrollTop />
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={12}
         outerSize={12}
         color="193, 11, 111"
@@ -50,7 +50,7 @@ function App() {
           "button",
           ".link",
         ]}
-      />
+      /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
