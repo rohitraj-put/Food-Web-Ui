@@ -18,9 +18,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <img className="h-32 w-32" src={logo} alt="logo" />
-            {/* <h2 className="text-3xl text-white uppercase font-bold">
-              tajtaazagicatters
-            </h2> */}
+
             <p className="mt-5">
               Let Taj Taazagi Catters transform your special occasion into a
               masterpiece with our professional touch.
