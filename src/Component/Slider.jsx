@@ -17,7 +17,7 @@ function Slider() {
           <h1 className="text-[18px] tracking-widest text-white font-bold ">
             Welcome to Taj Taazagi Catters
           </h1>
-          <h1 className="text-3xl text-white font-bold max-md:text-xl py-4 ">
+          <h1 className="text-3xl text-white font-bold max-md:text-md py-4 ">
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially

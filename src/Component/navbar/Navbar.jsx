@@ -48,18 +48,22 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 left-0 py-2 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 ">
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center space-x-2  h-28 w-28 z-20 mt-8"
+            className="flex items-center space-x-2  h-28 w-28 z-20 mt-4"
             onClick={closeMenu}
           >
             <span className="text-xl font-semibold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
               {isOpen ? (
                 ""
               ) : (
-                <img className=" rounded-full mt-8" src={logo} alt="logo" />
+                <img
+                  className=" rounded-full mt-4 scale-110 max-md:scale-105 "
+                  src={logo}
+                  alt="logo"
+                />
               )}
             </span>
           </Link>
