@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
-import wedding from "../assets/Image/wedding.avif";
+import wedding from "../assets/Image/Wedding.avif";
 import birthdayparty from "../assets/Image/birthday-party.avif";
 import Corporate from "../assets/Image/Corporate.jpg";
 
