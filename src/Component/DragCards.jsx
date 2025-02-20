@@ -9,7 +9,7 @@ import Seemantham from "../assets/Image/Seemantham.jpg";
 
 export const DragCards = () => {
   return (
-    <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-neutral-950">
+    <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-[#222222b6]">
       <h2 className="relative z-0 text-[20vw] font-black text-white md:text-[50px]">
         Taj Taazagi<span className="text-indigo-500">.</span>
       </h2>

@@ -27,7 +27,7 @@ function StoryCorner() {
             at no cost.
           </p>
           <button
-            className=" font-sans mt-2 py-2 px-5 flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 overflow-hidden border-2 rounded-full"
+            className=" font-sans mt-2 py-2 cursor-pointer px-5 flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 overflow-hidden border-2 rounded-full"
             type="submit"
           >
             Read More
@@ -53,7 +53,7 @@ function StoryCorner() {
             a seamless, stress-free celebration in your dream location! 💍🌍
           </p>
           <button
-            className=" font-sans flex mt-2 py-2 px-5 justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10  overflow-hidden border-2 rounded-full"
+            className=" font-sans cursor-pointer flex mt-2 py-2 px-5 justify-center gap-2 items-center mx-auto shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10  overflow-hidden border-2 rounded-full"
             type="submit"
           >
             Read More

@@ -42,7 +42,7 @@ function Testimonials() {
   const currentReview = reviews[currentIndex];
 
   return (
-    <div className="testimonials-container mt-7 w-full flex justify-between items-center flex-row max-md:flex-col bg-black gap-4 pt-5 pr-5 pl-5">
+    <div className="testimonials-container mt-7 w-full flex justify-between items-center flex-row max-md:flex-col bg-[#222222b6] gap-4 pt-5 pr-5 pl-5">
       <div className="w-1/2 max-md:w-full ">
         <h1 className="text-xl font-bold text-[#fff] tracking-widest uppercase">
           Testimonials.
@@ -61,14 +61,14 @@ function Testimonials() {
         </div>
         <div className="flex gap-4 mt-4">
           <button
-            className=" font-sans flex justify-center gap-2 items-center  shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 p-2 overflow-hidden border-2 rounded-full"
+            className=" font-sans cursor-pointer flex justify-center gap-2 items-center  shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 p-2 overflow-hidden border-2 rounded-full"
             type="button"
             onClick={handlePrev}
           >
             <IoArrowBackOutline />
           </button>
           <button
-            className=" font-sans flex justify-center gap-2 items-center  shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 p-2 overflow-hidden border-2 rounded-full"
+            className=" font-sans cursor-pointer flex justify-center gap-2 items-center  shadow-xl text-lg text-rose-800 bg-white backdrop-blur-md lg:font-semibold relative z-10 p-2 overflow-hidden border-2 rounded-full"
             type="button"
             onClick={handleNext}
           >

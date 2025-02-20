@@ -43,7 +43,7 @@ function Slider() {
           </p>
           <button
             onClick={changesRoutes}
-            className=" mx-auto mt-4 font-sans flex justify-center gap-2 items-center  shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-6 py-2 overflow-hidden border-2 rounded-full"
+            className=" mx-auto mt-4 font-sans cursor-pointer flex justify-center gap-2 items-center  shadow-xl text-lg text-gray-50 bg-rose-800 backdrop-blur-md lg:font-semibold relative z-10 px-6 py-2 overflow-hidden border-2 rounded-full"
             type="submit"
           >
             Explore
