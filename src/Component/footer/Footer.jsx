@@ -1,14 +1,18 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import logo from "../../assets/Image/11zon_cropped.png";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import { MdAddCall } from "react-icons/md";
+import bg from "../../assets/Image/footer-bg.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8 bg-[url(https://venuscateringservice.com/images/footer-bg.png)]">
+    <footer
+      className="bg-black text-white py-8"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
       <div className="container mx-auto px-4 md:px-8 lg:px-12">
         <div className="flex flex-wrap justify-between gap-2">
           {/* Logo and Description */}
@@ -26,22 +30,20 @@ const Footer = () => {
                 to={"#"}
                 className="text-lg text-rose-800 bg-white lg:font-semibold  p-2 border-2 rounded-full"
               >
-                <FaLinkedin />
-              </Link>
-              <Link
-                to={"#"}
-                className="text-lg text-rose-800 bg-white lg:font-semibold  p-2 border-2 rounded-full"
-              >
                 <FaYoutube />
               </Link>
               <Link
-                to={"#"}
+                to={"https://www.facebook.com/share/1B1PjVfUYh/"}
+                target="_blank"
                 className="text-lg text-rose-800 bg-white lg:font-semibold  p-2 border-2 rounded-full"
               >
                 <FaFacebook />
               </Link>
               <Link
-                to={"#"}
+                to={
+                  "https://www.instagram.com/tajtaazagicatters?igsh=d3UyaHlyaWpiZzI5"
+                }
+                target="_blank"
                 className="text-lg text-rose-800 bg-white lg:font-semibold  p-2 border-2 rounded-full"
               >
                 <FaInstagram />

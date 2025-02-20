@@ -43,7 +43,7 @@ function Testimonials() {
 
   return (
     <div className="testimonials-container mt-7 w-full flex justify-between items-center flex-row max-md:flex-col bg-black gap-4 pt-5 pr-5 pl-5">
-      <div className="w-1/2 max-md:w-full bg-[url(https://Taj Taazagi Catterservice.com/images/testimonial-bg.png)] bg-no-repeat">
+      <div className="w-1/2 max-md:w-full ">
         <h1 className="text-xl font-bold text-[#fff] tracking-widest uppercase">
           Testimonials.
         </h1>

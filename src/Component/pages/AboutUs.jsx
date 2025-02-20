@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Testimonials from "../Testimonials";
 import AboutImg from "../../assets/Image/about.jpg";
+import bg from "../../assets/Image/AboutBg.jpg";
 
 function AboutUs() {
   return (
@@ -9,8 +10,7 @@ function AboutUs() {
       <div
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://cdn.pixabay.com/photo/2019/09/26/13/24/food-4505944_1280.jpg')",
+          backgroundImage: `url(${bg})`,
         }}
       >
         <div className="text-center text-white p-8  bg-opacity-50 rounded-lg">

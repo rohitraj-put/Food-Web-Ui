@@ -7,6 +7,10 @@ import paneerTeeka from "../../assets/Image/paneer-tikka.jpg";
 import pannaCotta from "../../assets/Image/panna-cotta.jpg";
 import idli from "../../assets/Image/idli.jpg";
 import sheed from "../../assets/Image/sheed.jpg";
+import bg from "../../assets/Image/gellarybg.jpg";
+import IndianThali from "../../assets/Image/indian-dishes.avif";
+import southMeal from "../../assets/Image/south_meal.jpg";
+import GajarHalwa from "../../assets/Image/GajarHalwa.jpg";
 
 function Gallery() {
   const images = [
@@ -17,12 +21,12 @@ function Gallery() {
     },
     {
       id: 2,
-      url: "https://img.freepik.com/premium-photo/indian-dishes_2587-4.jpg?w=996",
+      url: IndianThali,
       description: "vegetarian Indian Thali",
     },
     {
       id: 3,
-      url: "https://img.freepik.com/premium-photo/traditional-south-indian-meal-food-served-big-banana-leaf-food-platter-complete-thali-selective-focus_466689-50782.jpg?w=740",
+      url: southMeal,
       description: "traditional South Indian meal",
     },
     {
@@ -32,7 +36,7 @@ function Gallery() {
     },
     {
       id: 5,
-      url: "https://img.freepik.com/premium-photo/gajar-halwa_1114710-3434.jpg?w=740",
+      url: GajarHalwa,
       description: "Gajar ka halwa",
     },
     {
@@ -69,8 +73,7 @@ function Gallery() {
       <div
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://cdn.pixabay.com/photo/2018/07/14/21/30/club-sandwich-3538455_1280.jpg')",
+          backgroundImage: `url(${bg})`,
         }}
       >
         <div className="text-center text-white p-8 bg-opacity-50 rounded-lg">

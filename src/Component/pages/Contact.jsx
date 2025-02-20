@@ -2,6 +2,7 @@ import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import { MdAddCall } from "react-icons/md";
+import bg from "../../assets/Image/contactbg.jpg";
 
 function Contact() {
   return (
@@ -9,8 +10,7 @@ function Contact() {
       <div
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg')",
+          backgroundImage: `url(${bg})`,
         }}
       >
         <div className="text-center text-white p-8  bg-opacity-50 rounded-lg">

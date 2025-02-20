@@ -37,11 +37,6 @@ function About() {
           className="w-1/2 h-full bg-rose-gray-300 rounded-2xl overflow-hidden max-md:w-full"
           data-aos="fade-right"
         >
-          {/* <img
-            className="w-full h-full hover:scale-125 duration-700"
-            src="	https://venuscateringservice.com/myimages/about3.jpg"
-            alt="foods"
-          /> */}
           <div className="relative h-full w-full">
             <video
               className="h-full w-full object-cover"

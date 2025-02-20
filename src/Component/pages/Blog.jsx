@@ -1,4 +1,8 @@
 import React from "react";
+import vegetable from "../../assets/Image/vegetable.jpg";
+import Thali from "../../assets/Image/indian-food.jpg";
+import salad from "../../assets/Image/salad.jpg";
+import bg from "../../assets/Image/blogBg.webp";
 
 function Blog() {
   const articles = [
@@ -6,7 +10,7 @@ function Blog() {
       date: "July 08, 2024",
       title:
         "The Rising Popularity of Vegetarian Catering. More Events Are Going Meat-Free",
-      image: "https://venuscateringservice.com/myimages/blog1.jpg",
+      image: vegetable,
       description:
         "In recent years, there has been a significant shift in the way events are catered, with more organizers opting for vegetarian menus. This growing trend is driven by several factors, including health consciousness, environmental concerns, and the increasing demand for plant-based options among attendees.",
     },
@@ -14,14 +18,14 @@ function Blog() {
       date: "Aug 22, 2024",
       title:
         "Delicious and Nutritious: Top 10 Vegetarian Dishes for Your Next Event",
-      image: "https://venuscateringservice.com/myimages/blog2.jpg",
+      image: salad,
       description:
         "Planning an event and looking for mouthwatering vegetarian options? Whether it’s a wedding, corporate gathering, or casual get-together, offering delicious plant-based dishes can leave a lasting impression on your guests. This guide highlights ten incredible vegetarian dishes that combine flavor, nutrition, and visual appeal, ensuring your event menu is both satisfying and memorable.",
     },
     {
       date: "Jan 16, 2025",
       title: "Planning the Perfect Vegetarian Menu for Any Occasion",
-      image: "https://venuscateringservice.com/images/post-3.jpg",
+      image: Thali,
       description:
         "Creating a balanced and satisfying meat-free spread has never been easier. This guide will help you curate the perfect vegetarian menu, ensuring every guest enjoys a delicious and memorable dining experience. From gourmet appetizers to hearty main courses and delectable desserts, we have everything you need to impress your guests.",
     },
@@ -31,8 +35,7 @@ function Blog() {
       <div
         className="flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_1280.jpg')",
+          backgroundImage: `url(${bg})`,
         }}
       >
         <div className="text-center text-white p-8  bg-opacity-50 rounded-lg">

@@ -1,6 +1,11 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
+import wedding from "../assets/Image/wedding.jpg";
+import Birthday from "../assets/Image/Birthday.jpg";
+import Engagement from "../assets/Image/Engagement.jpg";
+import Mehndi from "../assets/Image/Mehndi.jpg";
+import Seemantham from "../assets/Image/Seemantham.jpg";
 
 export const DragCards = () => {
   return (
@@ -20,7 +25,7 @@ const Cards = () => {
     <div className="absolute inset-0 z-10" ref={containerRef}>
       <Card
         containerRef={containerRef}
-        src="https://img.freepik.com/free-photo/beautiful-woman-long-red-dress-walks-around-city-with-her-husband_1157-13377.jpg?t=st=1738045525~exp=1738049125~hmac=249cb8095281fcb25c9680f2cad0c97b94899f43cc9d020be73ee4c5b9742e58&w=900"
+        src={wedding}
         alt="Example image"
         rotate="6deg"
         top="5%"
@@ -29,7 +34,7 @@ const Cards = () => {
       />
       <Card
         containerRef={containerRef}
-        src="https://venuscateringservice.com/myimages/corporate.jpg"
+        src={Birthday}
         alt="Example image"
         rotate="12deg"
         top="5%"
@@ -38,7 +43,7 @@ const Cards = () => {
       />
       <Card
         containerRef={containerRef}
-        src="https://img.freepik.com/premium-photo/cheerful-kids-attending-birthday-party_259150-5020.jpg?ga=GA1.1.1889603430.1735627527&semt=ais_hybrid"
+        src={Engagement}
         alt="Example image"
         rotate="-6deg"
         top="30%"
@@ -47,7 +52,7 @@ const Cards = () => {
       />
       <Card
         containerRef={containerRef}
-        src="https://img.freepik.com/free-photo/view-white-guest-chairs-decorated-ceremonial-archway-open-air-sunny-day_8353-11514.jpg?t=st=1738062632~exp=1738066232~hmac=db7de8a6bdb2a9c6bda14d2846051ad136686580658b7b572fd1ee6b1da271bf&w=900"
+        src={Mehndi}
         alt="Example image"
         rotate="8deg"
         top="50%"
@@ -57,7 +62,7 @@ const Cards = () => {
 
       <Card
         containerRef={containerRef}
-        src="https://www.cateringcorner.in/wp-content/themes/cateringcorner-v2/images/webp/home-story-1.webp"
+        src={Seemantham}
         alt="Example image"
         rotate="-3deg"
         top="28%"

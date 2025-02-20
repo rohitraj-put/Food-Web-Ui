@@ -1,15 +1,12 @@
 import React from "react";
 import { DragCards } from "./DragCards";
+import Destination from "../assets/Image/wedding_destination.avif";
 
 function StoryCorner() {
   return (
     <>
       <div className="flex justify-between flex-row gap-8 max-md:flex-col p-5 mt-7">
         <div className="w-1/2 h-[70vh] max-md:w-full overflow-hidden rounded-3xl">
-          {/* <img
-            className="hover:scale-125 duration-300"
-            src="https://www.cateringcorner.in/wp-content/themes/cateringcorner-v2/images/webp/home-story-1.webp"
-          /> */}
           <DragCards />
         </div>
         <div className="w-1/2 max-md:w-full p-5">
@@ -65,7 +62,7 @@ function StoryCorner() {
         <div className="w-1/2 max-md:w-full overflow-hidden rounded-3xl">
           <img
             className="hover:scale-125 duration-300 transition-transform "
-            src="https://img.freepik.com/free-photo/view-white-guest-chairs-decorated-ceremonial-archway-open-air-sunny-day_8353-11514.jpg?t=st=1738062632~exp=1738066232~hmac=db7de8a6bdb2a9c6bda14d2846051ad136686580658b7b572fd1ee6b1da271bf&w=900"
+            src={Destination}
           />
         </div>
       </div>

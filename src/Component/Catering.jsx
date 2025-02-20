@@ -2,11 +2,39 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import wedding from "../assets/Image/wedding.avif";
+import birthdayparty from "../assets/Image/birthday-party.avif";
+import Corporate from "../assets/Image/Corporate.jpg";
+
+const services = [
+  {
+    title: "Wedding Event",
+    description:
+      "Wedding. Why we have the concept of inviting all our relatives, friends and known ones? Its because, when a family celebrates an event means, its an occasion, when lot of people celebrates an event means, it turns as a feast. If there any feast occurs without food?? We are here to make a memorable experience for your guests by pampering their taste buds.",
+    imgUrl: wedding,
+    aosEffect: "fade-right",
+  },
+  {
+    title: "Corporate Event",
+    description:
+      "From corporate events to business occasions or milestone celebrations, our event catering team captures the heart of their audiences on their special occasions. We focus on delivering the customized delicacies of different types. We make sure all the audience feel good about the food too and that make your event unique.",
+    imgUrl: Corporate,
+    aosEffect: "fade-up",
+  },
+  {
+    title: "Birthday Party",
+    description:
+      "Make every birthday a memorable one with our birthday photography. Whether it’s a child's first birthday or a milestone celebration, we capture the joy, excitement, and love of the day and preserve it forever. At Taj Taazagi Catters Service, we take care of the happiness of your guests by offering them amazing food on behalf of you.",
+    imgUrl: birthdayparty,
+    aosEffect: "fade-left",
+  },
+];
 
 function Catering() {
   useEffect(() => {
     Aos.init({ duration: 1200, isOnce: true });
-  });
+  }, []);
+
   return (
     <div className="mt-16">
       <div className="w-2/3 max-md:w-full mx-auto">
@@ -14,7 +42,6 @@ function Catering() {
           What We Do.
         </h1>
         <h1 className="text-5xl text-center font-bold text-[#222222 max-md:text-3xl py-5">
-          {" "}
           Premium catering services
         </h1>
         <p className="text-lg text-center text-[#222222] py-2 px-2">
@@ -26,82 +53,30 @@ function Catering() {
         </p>
       </div>
 
-      <div className="flex flex-row max-md:flex-col  justify-center gap-4 overflow-hidden p-5">
-        <div
-          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full rounded-2xl overflow-hidden"
-          data-aos="fade-right"
-        >
-          <div className="w-full h-68 overflow-hidden">
-            <img
-              className="w-full h-full hover:scale-125 duration-700"
-              src="https://img.freepik.com/free-photo/beautiful-woman-long-red-dress-walks-around-city-with-her-husband_1157-13377.jpg?t=st=1738045525~exp=1738049125~hmac=249cb8095281fcb25c9680f2cad0c97b94899f43cc9d020be73ee4c5b9742e58&w=900"
-              alt="Catering"
-            />
+      <div className="flex flex-row max-md:flex-col justify-center gap-4 overflow-hidden p-5">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="w-1/2 min-h-80 bg-gray-100 max-md:w-full rounded-2xl overflow-hidden"
+            data-aos={service.aosEffect}
+          >
+            <div className="w-full h-68 overflow-hidden">
+              <img
+                className="w-full h-full hover:scale-125 duration-700"
+                src={service.imgUrl}
+                alt={service.title}
+              />
+            </div>
+            <div className="p-5">
+              <h1 className="text-xl font-bold text-rose-800 tracking-widest uppercase">
+                {service.title}
+              </h1>
+              <p className="text-lg text-start text-[#222222] py-5">
+                {service.description}
+              </p>
+            </div>
           </div>
-          <div className="p-5">
-            <h1 className="text-xl  font-bold text-rose-800 tracking-widest uppercase">
-              Wedding Event
-            </h1>
-            <p className="text-lg text-start text-[#222222] py-5">
-              Wedding. Why we have the concept of inviting all our relatives,
-              friends and known ones? Its because, when a family celebrates an
-              event means, its an occasion, when lot of people celebrates an
-              event means, it turns as a feast. If there any feast occurs
-              without food?? We are here to make a memorable experience for your
-              guests by pampering their taste buds.
-            </p>
-          </div>
-        </div>
-        <div
-          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full rounded-2xl overflow-hidden"
-          data-aos="fade-up"
-        >
-          <div className="w-full h-68 overflow-hidden">
-            <img
-              className="w-full h-full hover:scale-125 duration-700"
-              src="https://venuscateringservice.com/myimages/corporate.jpg"
-              alt="Catering"
-            />
-          </div>
-          <div className="p-5">
-            <h1 className="text-xl  font-bold text-rose-800 tracking-widest uppercase">
-              Corporate Event
-            </h1>
-            <p className="text-lg text-start text-[#222222] py-5">
-              From corporate events to business occasions or milestone
-              celebrations, our event catering team captures the heart of their
-              audiences on their special occasions. We focus on delivering the
-              customized delicacies of different types. We make sure all the
-              audience feel good about the food too and that make your event
-              unique.
-            </p>
-          </div>
-        </div>
-        <div
-          className="w-1/2 min-h-80 bg-gray-100  max-md:w-full rounded-2xl overflow-hidden"
-          data-aos="fade-left"
-        >
-          <div className="w-full h-68 overflow-hidden">
-            <img
-              className="w-full h-full hover:scale-125 duration-700"
-              src="https://img.freepik.com/premium-photo/cheerful-kids-attending-birthday-party_259150-5020.jpg?ga=GA1.1.1889603430.1735627527&semt=ais_hybrid"
-              alt="Catering"
-            />
-          </div>
-          <div className="p-5">
-            <h1 className="text-xl font-bold text-rose-800 tracking-widest uppercase">
-              Birthday Party
-            </h1>
-            <p className="text-lg text-start text-[#222222] py-5">
-              Make every birthday a memorable one with our birthday photography.
-              Whether it’s a child's first birthday or a milestone celebration,
-              we capture the joy, excitement, and love of the day and preserve
-              it forever. At Taj Taazagi Catters Service, we take care of the
-              happiness of your guests by offering them amazing food on behalf
-              of you.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
       <Link
         to={"/services"}
