@@ -12,11 +12,12 @@ function Slider() {
   return (
     <>
       <div className="bgImage relative w-full h-[86vh] flex items-center justify-center text-center">
-        <div className="w-2/3 back max-md:w-full">
-          <h1 className="p text-[18px] tracking-widest text-white font-bold ">
+        <div className="absolute inset-0 bg-[#2222228c] bg-opacity-50"></div>
+        <div className="w-2/3 back max-md:w-full relative max-md:px-2">
+          <h1 className="text-[18px] tracking-widest text-white font-bold ">
             Welcome to Taj Taazagi Catters
           </h1>
-          <h1 className="p text-3xl text-white font-bold max-md:text-xl">
+          <h1 className="text-3xl text-white font-bold max-md:text-xl py-4 ">
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
@@ -35,7 +36,7 @@ function Slider() {
               repeat={Infinity}
             />
           </h1>
-          <p className="p text-[18px] text-white font-semibold">
+          <p className=" text-[18px] text-white font-semibold">
             We are the top vegetarian wedding caterer in Agra. We have completed
             over 2,000+ weddings, supported by a professional team of 340
             members.

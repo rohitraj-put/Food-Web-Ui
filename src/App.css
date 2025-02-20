@@ -13,8 +13,7 @@
 
 
 .bgImage {
-  background: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1738147213~exp=1738150813~hmac=9ef7d67d55a3c66ceb3f223bbec27697dc1618d773e0702253a304593e612a0b&w=900');
-
+  background: url('../src/assets/Image/bg.avif');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
