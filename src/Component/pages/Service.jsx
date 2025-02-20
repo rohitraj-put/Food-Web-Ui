@@ -72,12 +72,13 @@ function Service() {
   return (
     <>
       <div
-        className="flex justify-center items-center h-[40vh] bg-cover bg-center"
+        className=" relative flex justify-center items-center h-[40vh] bg-cover bg-center"
         style={{
           backgroundImage: `url(${bg})`,
         }}
       >
-        <div className="text-center text-white p-8  bg-opacity-50 rounded-lg">
+        <div className="absolute inset-0 bg-[#222222ba] bg-opacity-50"></div>
+        <div className=" relative text-center text-white p-8  bg-opacity-50 rounded-lg">
           <h1 className="text-5xl max-md:text-3xl font-bold mb-4">Services</h1>
           <p className="text-lg">Home / Services</p>
         </div>
