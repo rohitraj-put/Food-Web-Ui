@@ -157,7 +157,7 @@ const Navbar = () => {
           {menuItems.map((item) => (
             <div key={item.label}>
               <button
-                className="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors duration-150"
+                className="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-white hover:bg-rose-800 rounded-md transition-colors duration-150"
                 onClick={() => {
                   if (item.submenu) {
                     setActiveDropdown(
@@ -169,10 +169,7 @@ const Navbar = () => {
                 }}
               >
                 <span className="flex items-center justify-between">
-                  <Link to={item.path} className="hover:text-rose-800">
-                    {" "}
-                    {item.label}
-                  </Link>
+                  <Link to={item.path}> {item.label}</Link>
                   {item.submenu && (
                     <ChevronDown
                       className={cn(
@@ -197,7 +194,7 @@ const Navbar = () => {
                     <Link
                       key={index}
                       to={subItem.path}
-                      className="block pl-6 pr-3 py-2 text-base font-medium text-gray-800 hover:text-rose-800 hover:bg-gray-50 rounded-md transition-colors duration-150"
+                      className="block pl-6 pr-3 py-2 text-base font-medium text-gray-800 hover:text-white hover:bg-rose-800  rounded-md transition-colors duration-150"
                       onClick={closeMenu}
                     >
                       {subItem.label}

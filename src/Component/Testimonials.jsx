@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoArrowForwardSharp, IoArrowBackOutline } from "react-icons/io5";
 import TestimonialsImage from "../assets/Image/testimonial-img.png";
+import bg from "../assets/Image/testimonialbg.png";
 
 const reviews = [
   {
@@ -42,8 +43,14 @@ function Testimonials() {
   const currentReview = reviews[currentIndex];
 
   return (
-    <div className="testimonials-container mt-7 w-full flex justify-between items-center flex-row max-md:flex-col bg-[#222222b6] gap-4 pt-5 pr-5 pl-5">
-      <div className="w-1/2 max-md:w-full ">
+    <div
+      className="testimonials-container mt-7 w-full flex justify-between items-center relative flex-row max-md:flex-col bg-[#222222b6] gap-4 pt-5 pr-5 pl-5 bg-no-repeat bg-cover"
+      style={{
+        backgroundImage: `url(${bg})`,
+      }}
+    >
+      <div className="absolute inset-0 bg-[#22222289] bg-opacity-50"></div>
+      <div className="w-1/2 max-md:w-full relative">
         <h1 className="text-xl font-bold text-[#fff] tracking-widest uppercase">
           Testimonials.
         </h1>
@@ -76,7 +83,7 @@ function Testimonials() {
           </button>
         </div>
       </div>
-      <div className="w-[400px] h-[630px] max-md:w-full">
+      <div className="w-[400px] h-[630px] max-md:w-full relative">
         <img
           className="w-full h-full"
           src={TestimonialsImage}

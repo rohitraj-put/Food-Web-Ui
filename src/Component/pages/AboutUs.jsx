@@ -23,10 +23,10 @@ function AboutUs() {
       {/* ---------About US--------- */}
       <div>
         <div
-          className="flex flex-row max-md:flex-col  justify-center p-10 gap-2"
+          className="flex flex-row max-md:flex-col-reverse justify-center p-10 gap-2"
           style={{ padding: "10px", marginTop: "70px" }}
         >
-          <div className="w-1/2 h-[120vh] max-md:h-[60vh] flex justify-between gap-4 max-md:w-full rounded-2xl overflow-hidden">
+          <div className="w-1/2 h-[120vh] max-md:h-[60vh] gap-4 max-md:w-full rounded-2xl overflow-hidden">
             <img
               className="w-full h-full object-cover  hover:scale-125 duration-700 "
               src={AboutImg}
