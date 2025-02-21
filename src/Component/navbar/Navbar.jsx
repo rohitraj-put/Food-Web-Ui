@@ -133,7 +133,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-rose-900 hover:text-rose-900 hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-800 transition-colors duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-md text-rose-900 hover:text-rose-900 cursor-pointer hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-800 transition-colors duration-200"
             >
               {isOpen ? (
                 <X className="h-8 w-8" />
