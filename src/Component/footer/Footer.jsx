@@ -13,7 +13,7 @@ const Footer = () => {
       className="bg-[#222222b6] text-white py-8"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="container mx-auto px-4 md:px-8 lg:px-12">
+      <div className=" mx-auto px-4 md:px-8 lg:px-12">
         <div className="flex flex-wrap justify-between gap-2">
           {/* Logo and Description */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
