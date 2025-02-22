@@ -65,7 +65,9 @@ function App() {
         <Route path="blogs" element={<Blog />} />
         <Route path="contactus" element={<Contact />} />
         <Route path="*" element={<PageNotFound />} />
+
         {/* -------------------Menus Routes--------------- */}
+
         <Route path="weddingmenu" element={<WeddingMenu />} />
         <Route path="birthdaymenu" element={<BirthdayMenu />} />
         <Route path="corporatemenu" element={<CorporateEventMenu />} />
