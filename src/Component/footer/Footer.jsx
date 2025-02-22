@@ -10,7 +10,7 @@ import bg from "../../assets/Image/footer-bg.png";
 const Footer = () => {
   return (
     <footer
-      className="bg-[#222222b6] text-white py-8"
+      className="bg-[#222222da] text-white py-8"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className=" mx-auto px-4 md:px-8 lg:px-12">
