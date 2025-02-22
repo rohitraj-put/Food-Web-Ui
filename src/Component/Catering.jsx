@@ -41,7 +41,7 @@ function Catering() {
         <h1 className="text-xl text-center  font-bold text-rose-800 tracking-widest uppercase">
           What We Do.
         </h1>
-        <h1 className="text-5xl text-center font-bold text-[#222222 max-md:text-3xl py-5">
+        <h1 className="text-5xl text-center font-bold text-[#222222] max-md:text-3xl py-5">
           Premium catering services
         </h1>
         <p className="text-lg text-center text-[#222222] py-2 px-2">
