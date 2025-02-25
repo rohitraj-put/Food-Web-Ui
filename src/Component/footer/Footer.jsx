@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import logo from "../../assets/Image/11zon_cropped.png";
+import logo from "../../assets/Image/logoCircle.png";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
@@ -74,6 +74,9 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="w-full md:w-1/3">
             <h2 className="text-xl font-bold mb-4">Contact Now</h2>
+            <h2 className="text-2xl font-bold mb-4 uppercase text-rose-500">
+              Namrata Foods
+            </h2>
             <p className="py-1 flex gap-1 items-center">
               <FaLocationDot size={32} /> At. Kh No. 61, In Front Of Basera Near
               Hotel Jaya Pee Palace, Fatehabad Road, Agra.
